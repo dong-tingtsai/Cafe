@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafe</title>
+    <!--Fontawesome ICON-->
+    <script src="https://kit.fontawesome.com/4ce54b2072.js" crossorigin="anonymous"></script>
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="./CSS/reset.css">
+    <link rel="stylesheet" href="./CSS/header.css">
+    <link rel="stylesheet" href="./CSS/Pickup-food-online.css">
+    <link rel="stylesheet" href="./CSS/login.css">
+    <link rel="stylesheet" href="./CSS/footer.css">
+</head>
+<body>
+  <div id="lightBox" style="display:none">
+    <div class="loginCard">
+     <h2>會員登入</h2>
+      <form action="">
+          <label for="login" class="close"  onclick="cancelLogin()">
+             <img src="images/xmark-solid.svg" width="25px" height="25px">
+          </label>
+          <div class="input-group">
+             <!-- <span class="icon-group">
+                <i class="fa-solid fa-envelope"></i>
+             </span> -->
+             <label for="username">帳號：</label>
+             <input type="text" id="username" name="username" placeholder="請輸入電子郵件" required>
+             <!-- <div class="icon-group">
+              <i class="fa-solid fa-envelope"></i>
+           </div> -->
+          </div>
+  
+          <div class="input-group">
+             <label for="password">密碼：</label>
+             <input type="password" id="password" name="password" placeholder="請輸入密碼" required>
+          </div>
+  
+          <div class="forget-password">
+            <a href="#"><p>忘記密碼</p></a>
+         </div>
+  
+        <button type="submit" class="login-submit">登入</button>
+     
+        <div class="other-login">
+           <h3>或使用社群帳號登入</h3>
+           <div class="social-web">
+              <a href="#"><img src="images/facebook.png"></a>
+              <a href="#"><img src="images/google.png"></a>
+              <a href="#"><img src="images/line.png"></a>
+           </div>
+        </div>
+  
+        <div class="register">
+          <p>還沒有帳號嗎? <a href="#" class="registerLink">立即註冊</a></p>
+            <!-- <a href="#" class="registerLink">立即註冊</a> -->
+        </div>
+  
+    </form>
+   </div>
+  </div>
+
+
+
+  <!-- <input type="checkbox" id="menu-switch"> -->
+  <!-- header區域 -->
+  <header class="header">
+    <nav class="nav-header">
+      <div class="nav-container">
+        <ul class="nav">
+          <li><a href="./news.html">最新消息</a></li>
+          <li class="product-dropdown"><a href="./product-desciption.html">商品介紹</a>
+            <ul class="dropdown-content">
+              <li><a href="./product-desciption.html">咖啡飲品</a></li>
+              <li><a href="./product-desciption.html">甜點</a></li>
+              <li><a href="./product-desciption.html">茶類飲品</a></li>
+            </ul>
+          </li>
+          <li><a href="./store-locations.html">門市據點</a></li>
+        </ul>
+
+        <div class="logo">
+          <a href="./index.html">
+            <img src="./images/logo-removebg-preview.png" alt="logo" width="150" height="150">
+          </a>
+        </div>
+
+
+
+        <button id="btnHam" class="hb"></button> 
+
+
+        <!-- <label for="menu-switch" class="hb">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label> -->
+
+
+        <nav id="menu"  class="hb-nav hidden">
+          <ul class="hb-list">
+            <li><a href="./news.html">最新消息</a></li>
+            <li class="product-dropdown"><a href="./product-desciption.html">商品介紹</a>
+              <!-- <ul class="dropdown-subcontent">
+                <li><a href="./product-desciption.html">咖啡飲品</a></li>
+                <li><a href="./product-desciption.html">甜點</a></li>
+                <li><a href="./product-desciption.html">茶類飲品</a></li>
+              </ul> -->
+            </li>
+            <li><a href="./store-locations.html">門市據點</a></li>
+            <li><a href="./about-us.html">關於我們</a></li>
+            <li><a href="./contact-us.html">聯絡我們</a></li>
+            <li><a href="./Pickup-food-online.html">線上點餐</a></li>
+          </ul>
+        </nav>
+
+
+        <ul class="nav">
+          <li><a href="./about-us.html">關於我們</a></li>
+          <li><a href="./contact-us.html">聯絡我們</a></li>
+          <li><a href="./Pickup-food-online.html">線上點餐</a></li>
+        </ul>
+
+        <div class="nav-icon">
+          <a href="#" class="spanLogin" onclick = "showLightBox()"><i class="fas fa-user"></i></a>
+          <!-- <a href="#"> <i class="fas fa-shopping-cart"></i></a> -->
+          <a href="#"><i class="fa fa-search"></i></a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  
+
+
+<!-- banner區 -->
+<div class="banner" >
+    <div class="container-banner">
+        <div class="pic-banner">
+            <img src="images/online.jpg" alt="banner">
+            <!-- <img src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?q=80&w=1961&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="banner"> -->
+            <h1>線上點餐</h1>
+        </div>
+    </div>
+</div>
+
+
+ <!-- 線上點餐 -->
+ <section class="Pickup_food_online-section">
+    <div class="online-container">
+
+      <div class="online-form"> 
+         <form action="#" method="get">
+
+            <div class="form-group">
+              <label for="name">店家:</label>
+              <!-- <input type="text" name="name" id="name"> -->
+              <select name="name" id="name">
+                <option value="">台北西門店</option>
+                <option value="">台北信義店</option>
+                <option value="">台中一中店</option>
+                <option value="">台南南紡店</option>
+                <option value="">高雄左營店</option>
+                <option value="">花蓮玉里店</option>
+              </select>
+            </div>
+
+           <div class="form-group">
+            <label for="date">預計取餐日期:</label>
+            <input type="date" name="date" id="date">
+           </div>
+
+
+           <div class="form-group form-group-time">
+              <label for="time">預計取餐時間:</label>
+              <input type="time" name="time" id="time" min="06:00" max="13:30" value="06:00" required>
+          </div>
+
+        </form>
+      </div>
+    </div>
+  </section> 
+    
+<!-- 商品介紹 -->
+<section class="section-product">
+   <div class="container-product">
+    <div class="category-product">
+        <div class="product-tab active"><h3>咖啡飲品</h3></div>
+        <div class="product-tab"><h3>甜點</h3></div>
+        <div class="product-tab"><h3>茶類飲品</h3></div>
+    </div>
+
+    <div class="product-card-list">
+
+        <div class="product-card">
+          <div class="product-pic" onclick="openModal()">
+           <img src="images/Americano.jpg">
+             <!-- <img src="https://i.pinimg.com/564x/d6/f2/e9/d6f2e9113aa8f9aef8b59a8e28bd7255.jpg"> -->
+             <div class="product-btn" id="cart-pic">
+              <a href="#" class="shopping-cart">
+                <i class="fas fa-shopping-cart"></i>
+              </a>
+            </div>
+         </div>
+         <div class="product-info">
+             <div class="product-name"><h3>美式咖啡</h3></div>
+             <div class="product-pric"><p>NT$60/M NT$70/L</p></div>
+         </div>
+  
+        </div>
+
+       <div class="product-card">
+         <div class="product-pic">
+           <img src="images/latte.jpg">
+             <!-- <img src="https://i.pinimg.com/564x/55/f8/7b/55f87b082c2e6f655957e29725e8a0d8.jpg"> -->
+             <span class="tag">熱門商品</span>
+             <div class="product-btn">
+              <a href="#" class="shopping-cart">
+                <i class="fas fa-shopping-cart"></i>
+              </a>
+            </div>
+         </div>
+         <div class="product-info">
+             <div class="product-name"><h3>拿鐵咖啡</h3></div>
+             <div class="product-pric"><p>NT$80/M NT$95/L</p></div>
+        </div>
+     
+       </div>
+
+
+       <div class="product-card">
+         <div class="product-pic">
+           <img src="images/Pumpkin-Spice-Iced-Latte.jpg">
+             <!-- <img src="https://i.pinimg.com/564x/0a/86/a2/0a86a2435caf3934e19c49f0bb72c61e.jpg"> -->
+             <div class="product-btn">
+              <a href="#" class="shopping-cart">
+                <i class="fas fa-shopping-cart"></i>
+              </a>
+            </div>
+         </div>
+         <div class="product-info">
+             <div class="product-name"><h3>南瓜香料冰拿鐵</h3></div>
+             <div class="product-pric"><p>NT$85/M NT$100/L</p></div>
+         </div>
+   
+       </div>
+
+       <div class="product-card">
+        <div class="product-pic">
+            <img src="images/French-Vanilla-Cappuccino.jpg">
+            <!-- <img src="https://i.pinimg.com/564x/56/81/6a/56816a77f6a4ca02be82d55ebb6d7fa3.jpg"> -->
+            <span class="tag">熱門商品</span>
+                   <div class="product-btn">
+            <a href="#" class="shopping-cart">
+              <i class="fas fa-shopping-cart"></i>
+            </a>
+          </div>
+        </div>
+        <div class="product-info">
+            <div class="product-name"><h3>法式香草卡布奇諾</h3></div>
+            <div class="product-pric"><p>NT$80/M NT$95/L</p></div>
+        </div>
+ 
+    </div>
+
+
+    <div class="product-card">
+        <div class="product-pic">
+            <img src="images/Caramel-macchiato.jpg">
+            <!-- <img src="https://i.pinimg.com/564x/da/1c/f5/da1cf52f55b7b4adcac8dbff75a7a223.jpg"> -->
+            <div class="product-btn">
+              <a href="#" class="shopping-cart">
+                <i class="fas fa-shopping-cart"></i>
+              </a>
+            </div>
+        </div>
+        <div class="product-info">
+            <div class="product-name"><h3>焦糖瑪奇朵</h3>
+              <div class="product-pric"><p>NT$90/M NT$105/L</p></div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="product-card">
+        <div class="product-pic">
+            <img src="images/Mocha.jpg">
+            <!-- <img src="https://i.pinimg.com/564x/10/f2/9b/10f29bb91f7cc968118df28b6d8f6b6b.jpg"> -->
+            <div class="product-btn">
+              <a href="#" class="shopping-cart">
+                <i class="fas fa-shopping-cart"></i>
+              </a>
+            </div>
+        </div>
+        <div class="product-info">
+            <div class="product-name"><h3>摩卡咖啡</h3></div>
+            <div class="product-pric"><p>NT$80/M NT$95/L</p></div>
+        </div>
+
+    </div>
+   </div>
+  </div>
+</section>
+
+<div id="lightbox_cart" style="display:none">
+  <div class="order_cart">
+      <i class="fa-solid fa-xmark" onclick="closeModal()"></i>
+      <div class="img_cart">
+          <img src="images/Americano-removebg-preview.png" alt="">
+      </div>
+      <div class="name_cart">
+          <p class="font20px product_name">美式咖啡</p>
+          <select id="sizeSelect" onchange="updatePrice()">
+            <option value="M" class="M">M</option>
+            <option value="L" class="L">L</option>
+          </select>
+          <!-- <p class="font20px product_money" id="priceDisplay">$<span>60</span></p> -->
+          <div class="product_money" id="priceDisplay">$60</div>
+      </div>
+      <label class='label_note' for="note">備註：</label>
+      <br>
+      <textarea name="note" id="note" cols="30" rows="10" placeholder="請問有什麼需求"></textarea>
+      <div class="down_cart">
+          <div class="add_cart">
+              <i class="fa-solid fa-minus" onclick="decreaseQuantity()"></i>
+              <input type="text" class="qty" value="1">
+              <i class="fa-solid fa-plus" onclick="increaseQuantity()"></i>
+          </div>
+          <a class="btn_add btn_cart" onclick="addToCart()">加入購物車</a>
+      </div>
+  </div>
+</div>
+
+
+<!-- <div class="lightbox_cart" style="display:none">
+  <div class="order_cart">
+      <i class="fa-solid fa-xmark" onclick="closeModal()"></i>
+      <div class="img_cart">
+          <img src="images/latte-removebg-preview.png" alt="">
+      </div>
+      <div class="name_cart">
+          <p class="font20px product_name">拿鐵咖啡</p>
+          <select id="sizeSelect" onchange="updatePrice()">
+            <option value="M" class="M">M</option>
+            <option value="L" class="L">L</option>
+          </select>
+
+          <div class="product_money" id="priceDisplay">$80</div>
+      </div>
+      <label class='label_note' for="note">備註：</label>
+      <br>
+      <textarea name="note" id="note" cols="30" rows="10" placeholder="請問有什麼需求"></textarea>
+      <div class="down_cart">
+          <div class="add_cart">
+              <i class="fa-solid fa-minus" onclick="decreaseQuantity()"></i>
+              <input type="text" class="qty" value="1">
+              <i class="fa-solid fa-plus" onclick="increaseQuantity()"></i>
+          </div>
+          <a class="btn_add btn_cart" onclick="addToCart()">加入購物車</a>
+      </div>
+  </div>
+</div> -->
+
+
+
+
+
+<div class="check-cart-bar" style="display:none">
+  <button class="check-cart" onclick="openCart()">
+    <p>我的購物車</p>
+    <span class="count-list"><span id="cart-count" class="highlight">0</span>
+  </button>
+</div>
+
+<div id="lightbox-cartlist" class="lightbox-cartlist" style="display:none">
+  <div class="cartlist">
+     <i class="fa-solid fa-xmark"  onclick="closeCart()"></i>
+     <ul class="cart-content" id="cart-items">
+     </ul>
+       <p class="cart-pric">
+         購物金額:
+         <span class="total-money">$</span>
+         <span class="total-pric" id="total">0</span>
+       </p>
+     <div class="cart-btn">
+       <a class="continue-ordering" onclick="closeCart()">繼續點餐</a>
+       <a id="Payment" class="payment-checkout">付款結帳</a>
+     </div>
+
+  </div>
+</div>
+
+
+ <!-- footer 區域-->
+ <footer class="footer">
+  <div class="container-footer">
+    <div class="content-footer">
+      <div class="content1-footer">
+        <ul class="footer-nav">
+          <li><a href="#">活動訊息</a></li>
+          <li><a href="#">聯絡我們</a></li>
+          <li><a href="#">門市查詢</a></li>
+        </ul>
+
+        <div class="footer-logo">
+          <a href="#">
+            <img src="./images/logo-removebg-preview.png" alt="logo" width="150" height="150">
+          </a>
+        </div>
+
+        <ul class="footer-nav">
+          <li><a href="#">人才招募</a></li>
+          <li><a href="#">常見問題</a></li>
+          <li><a href="#">關於我們</a></li>
+        </ul>
+
+      </div>
+
+      <div class="content2-footer">
+        <div class="icon-footer">
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-youtube"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+        <div class="source">
+          <a href="./source.html">
+            <p>資料來源</p>
+          </a>
+        </div>
+      </div>
+
+      <div class="copyright">
+        <p class="chinese">本網站為緯育TibaMe前端工程師班第xx期學員專題作品，本平台僅供學習、展示之用。</p>
+      </div>
+    </div>
+
+    <div class="to-top">
+      <a href="#">
+        <i class="fa-solid fa-angle-up"></i>
+      </a>
+    </div>
+
+  </div>
+</footer>
+
+
+ <!-- footer-app 區域-->
+ <footer class="footer-app">
+  <div class="container-footer-app">
+    <div class="content-footer-app">
+
+      <div class="content1-footer-app">
+        <div class="footer-logo">
+          <a href="#">
+            <img src="./images/logo-removebg-preview.png" alt="logo" width="150" height="150">
+          </a>
+        </div>
+
+        <ul class="footer-nav">
+          <li><a href="#">活動訊息</a></li>
+          <li><a href="#">聯絡我們</a></li>
+          <li><a href="#">門市查詢</a></li>
+          <li><a href="#">人才招募</a></li>
+          <li><a href="#">常見問題</a></li>
+          <li><a href="#">關於我們</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="content2-footer-app">
+      <div class="icon-footer">
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+      <div class="source">
+        <a href="./source.html">
+          <p>資料來源</p>
+        </a>
+      </div>
+    </div>
+
+    <div class="copyright-app">
+      <p>本網站為緯育TibaMe前端工程師班第xx期學員專題作品，本平台僅供學習、展示之用。</p>
+    </div>
+
+    <div class="to-top">
+      <a href="#">
+        <i class="fa-solid fa-angle-up"></i>
+      </a>
+    </div>
+  </div>
+</footer>
+  
+<script src="./js/hamburger_menu.js"></script>  
+<script src="./js/login.js"></script>
+<script src="./js/addcart.js"></script>
+</body>
+</html>

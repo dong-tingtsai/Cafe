@@ -9,79 +9,153 @@
     <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
     <link rel="stylesheet" href="./CSS/reset.css">
     <link rel="stylesheet" href="./CSS/header.css">
-    <link rel="stylesheet" href="./CSS/font-page.css">
     <link rel="stylesheet" href="./CSS/contact-us.css">
+    <link rel="stylesheet" href="./CSS/login.css">
     <link rel="stylesheet" href="./CSS/footer.css">
 </head>
 <body>
-      <!-- header區域 -->
-      <header class="header">
-        <nav class="nav-header">
-         <div class="nav-container">
-             <ul class="nav-left">
-                 <li><a href="./index.html">首頁</a></li>
-                 <li><a href="./news.html">最新消息</a></li>
-                 <li class="dropdown"><a href="./product-desciption.html">商品介紹</a>
-                    <ul class="dropdown-content">
-                     <li><a href="./product-desciption.html">咖啡飲品</a></li>
-                     <li><a href="./product-desciption.html">甜點</a></li>
-                     <li><a href="./product-desciption.html">茶類飲品</a></li>
-                   </ul>
-                 </li>
-                 <!-- <li><a href="./store-locations.html">門市據點</a></li> -->
-             </ul>
+  <div id="lightBox" style="display:none">
+    <div class="loginCard">
+     <h2>會員登入</h2>
+      <form action="">
+          <label for="login" class="close"  onclick="cancelLogin()">
+             <img src="images/xmark-solid.svg" width="25px" height="25px">
+          </label>
+          <div class="input-group">
+             <!-- <span class="icon-group">
+                <i class="fa-solid fa-envelope"></i>
+             </span> -->
+             <label for="username">帳號：</label>
+             <input type="text" id="username" name="username" placeholder="請輸入電子郵件" required>
+             <!-- <div class="icon-group">
+              <i class="fa-solid fa-envelope"></i>
+           </div> -->
+          </div>
+  
+          <div class="input-group">
+             <label for="password">密碼：</label>
+             <input type="password" id="password" name="password" placeholder="請輸入密碼" required>
+          </div>
+  
+          <div class="forget-password">
+            <a href="#"><p>忘記密碼</p></a>
+         </div>
+  
+        <button type="submit" class="login-submit">登入</button>
      
-             <div class="logo">
-                  <a href="./index.html">
-                     <img src="./images/logo-removebg-preview.png" alt="logo" width="150" height="150">
-                  </a>
-             </div>
-             <ul class="nav-left">
-                 <li><a href="./store-locations.html">門市據點</a></li>
-                 <li><a href="./about-us.html">關於我們</a></li>
-                 <li><a href="./contact-us.html">聯絡我們</a></li>
-                 <!-- <li><a href="#">會員登入</a></li> -->
-             </ul>
-             <div class="nav-icon">
-                 <a href="./login.html"><i class="fas fa-user"></i></a>
-                 <a href="#"> <i class="fas fa-shopping-cart"></i></a>
-                 <a href="#"><i class="fa fa-search"></i></a>
-             </div>
-     </div>
-   </nav>
- </header>
+        <div class="other-login">
+           <h3>或使用社群帳號登入</h3>
+           <div class="social-web">
+              <a href="#"><img src="images/facebook.png"></a>
+              <a href="#"><img src="images/google.png"></a>
+              <a href="#"><img src="images/line.png"></a>
+           </div>
+        </div>
+  
+        <div class="register">
+          <p>還沒有帳號嗎? <a href="#" class="registerLink">立即註冊</a></p>
+            <!-- <a href="#" class="registerLink">立即註冊</a> -->
+        </div>
+  
+    </form>
+   </div>
+  </div>
 
-   <!-- banner區 -->
-   <div class="banner" >
+ 
+  <!-- <input type="checkbox" id="menu-switch"> -->
+  <!-- header區域 -->
+  <header class="header">
+    <nav class="nav-header">
+      <div class="nav-container">
+        <ul class="nav">
+          <li><a href="./news.html">最新消息</a></li>
+          <li class="product-dropdown"><a href="./product-desciption.html">商品介紹</a>
+            <ul class="dropdown-content">
+              <li><a href="./product-desciption.html">咖啡飲品</a></li>
+              <li><a href="./product-desciption.html">甜點</a></li>
+              <li><a href="./product-desciption.html">茶類飲品</a></li>
+            </ul>
+          </li>
+          <li><a href="./store-locations.html">門市據點</a></li>
+        </ul>
+
+        <div class="logo">
+          <a href="./index.html">
+            <img src="./images/logo-removebg-preview.png" alt="logo" width="150" height="150">
+          </a>
+        </div>
+
+
+
+        <button id="btnHam" class="hb"></button> 
+
+
+        <!-- <label for="menu-switch" class="hb">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label> -->
+
+
+        <nav id="menu"  class="hb-nav hidden">
+          <ul class="hb-list">
+            <li><a href="./news.html">最新消息</a></li>
+            <li class="product-dropdown"><a href="./product-desciption.html">商品介紹</a>
+              <!-- <ul class="dropdown-subcontent">
+                <li><a href="./product-desciption.html">咖啡飲品</a></li>
+                <li><a href="./product-desciption.html">甜點</a></li>
+                <li><a href="./product-desciption.html">茶類飲品</a></li>
+              </ul> -->
+            </li>
+            <li><a href="./store-locations.html">門市據點</a></li>
+            <li><a href="./about-us.html">關於我們</a></li>
+            <li><a href="./contact-us.html">聯絡我們</a></li>
+            <li><a href="./Pickup-food-online.html">線上點餐</a></li>
+          </ul>
+        </nav>
+
+
+        <ul class="nav">
+          <li><a href="./about-us.html">關於我們</a></li>
+          <li><a href="./contact-us.html">聯絡我們</a></li>
+          <li><a href="./Pickup-food-online.html">線上點餐</a></li>
+        </ul>
+
+        <div class="nav-icon">
+          <a href="#" class="spanLogin" onclick = "showLightBox()"><i class="fas fa-user"></i></a>
+          <!-- <a href="#"> <i class="fas fa-shopping-cart"></i></a> -->
+          <a href="#"><i class="fa fa-search"></i></a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  
+
+<!-- banner區 -->
+<div class="banner" >
     <div class="container-banner">
-        <!-- <div class="pic-banner">
-            <img src="https://i.pinimg.com/564x/3e/f1/b4/3ef1b4b97b554233cac66fb559765ff7.jpg" alt="banner">
-        </div> -->
-        <!-- <div class="slogan-banner">
-            <h1>每一口咖啡都是用心烘培而成，<br>
-                為你帶來絕佳的品味享受</h1>
-        </div> -->
+        <div class="pic-banner">
+          <img src="./images/contact.jpg" alt="banner">
+          <!-- <img src="https://images.unsplash.com/photo-1509785307050-d4066910ec1e?q=80&w=1928&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="banner"> -->
+            <h1>聯絡我們</h1>
+        </div>
     </div>
 </div>
 
 <!-- 聯絡我們 -->
 <section class="section-contact-us">
-    <div class="contact-container">
+    <div class="content">
   
-      <div class="chinese title-contact">
-         <h2>聯絡我們</h2>
-      </div>
-
       <div class="content-contact">
         <p>有任何聯絡需求請填妥下列表格，我們將會在上班時間回覆您。
             或可撥打各分店電話，由專人為您服務。</p>
      </div>
 
      <div class="form-contact">
-        <form action="#" method="get" class="chinese">
+        <form action="#" method="get">
             <div class="form-group">
                 <label for="name">姓名</label><br>
-                <input type="text" name="name" id="name"><br>
+                <input type="text" name="name" id="name" placeholder="請輸入姓名"><br>
             </div>
 
             <div class="form-group">
@@ -95,16 +169,19 @@
 
             <div class="form-group">
                 <label for="tele">電話</label><br>
-                <input type="tel" name="tel" id="tel"><br>
+                <input type="tel" name="tel" id="tel" placeholder="請輸入電話"><br>
             </div>
+
             <div class="form-group">
                 <label for="e-mail">電子郵件</label><br>
-                <input type="email" name="email" id="email"><br>
+                <input type="email" name="email" id="email" placeholder="請輸入電子郵件"><br>
             </div>
+
             <div class="form-group">
                 <label for="request">需求說明</label><br>
-                <textarea name="request" id="requeat"></textarea>
+                <textarea name="request" id="requeat" placeholder="請輸入需求說明"></textarea>
             </div>
+            
             <input type="submit" value="確認送出">
         </form>
     </div>
@@ -114,47 +191,109 @@
 </section>
 
 
-<!-- footer 區域-->
-<footer class="footer">
+  <!-- footer 區域-->
+  <footer class="footer">
     <div class="container-footer">
       <div class="content-footer">
         <div class="content1-footer">
-          <ul class="footer-left">
-              <li><a href="#">活動訊息</a></li>
-              <li><a href="#">聯絡我們</a></li>
-              <li><a href="#">門市查詢</a></li>
+          <ul class="footer-nav">
+            <li><a href="#">活動訊息</a></li>
+            <li><a href="#">聯絡我們</a></li>
+            <li><a href="#">門市查詢</a></li>
           </ul>
-      
+
           <div class="footer-logo">
-              <a href="#">
-                  <img src="./images/logo-removebg-preview.png" alt="logo" width="150" height="150">
-               </a>
+            <a href="#">
+              <img src="./images/logo-removebg-preview.png" alt="logo" width="150" height="150">
+            </a>
           </div>
-      
-          <ul class="footer-right">
-              <li><a href="#">人才招募</a></li>
-              <li><a href="#">隱私權政策</a></li>
+
+          <ul class="footer-nav">
+            <li><a href="#">人才招募</a></li>
+            <li><a href="#">常見問題</a></li>
+            <li><a href="#">關於我們</a></li>
           </ul>
-          
+
         </div>
-         <div class="copyright">
-              <p>本網站為緯育TibaMe前端工程師班第xx期學員專題作品，本平台僅供學習、展示之用。</p>
-          </div>
-        </div>
-    
-      <div class="content2-footer">
+
+        <div class="content2-footer">
           <div class="icon-footer">
-              <a href="#"><i class="fa-brands fa-facebook"></i></a>
-              <a href="#"><i class="fa-brands fa-youtube"></i></a>
-              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
           </div>
           <div class="source">
-            <a href="./source.html"> <p>資料來源</p></a>
+            <a href="./source.html">
+              <p>資料來源</p>
+            </a>
           </div>
+        </div>
+
+        <div class="copyright">
+          <p class="chinese">本網站為緯育TibaMe前端工程師班第xx期學員專題作品，本平台僅供學習、展示之用。</p>
+        </div>
       </div>
+
+      <div class="to-top">
+        <a href="#">
+          <i class="fa-solid fa-angle-up"></i>
+        </a>
+      </div>
+
     </div>
   </footer>
 
 
+   <!-- footer-app 區域-->
+   <footer class="footer-app">
+    <div class="container-footer-app">
+      <div class="content-footer-app">
+
+        <div class="content1-footer-app">
+          <div class="footer-logo">
+            <a href="#">
+              <img src="./images/logo-removebg-preview.png" alt="logo" width="150" height="150">
+            </a>
+          </div>
+
+          <ul class="footer-nav">
+            <li><a href="#">活動訊息</a></li>
+            <li><a href="#">聯絡我們</a></li>
+            <li><a href="#">門市查詢</a></li>
+            <li><a href="#">人才招募</a></li>
+            <li><a href="#">常見問題</a></li>
+            <li><a href="#">關於我們</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="content2-footer-app">
+        <div class="icon-footer">
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-youtube"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+        <div class="source">
+          <a href="./source.html">
+            <p>資料來源</p>
+          </a>
+        </div>
+      </div>
+
+      <div class="copyright-app">
+        <p>本網站為緯育TibaMe前端工程師班第xx期學員專題作品，本平台僅供學習、展示之用。</p>
+      </div>
+
+      <div class="to-top">
+        <a href="#">
+          <i class="fa-solid fa-angle-up"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+<script src="./js/hamburger_menu.js"></script>
+<script src="./js/login.js"></script>
 </body>
 </html>

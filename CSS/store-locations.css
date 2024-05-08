@@ -1,144 +1,230 @@
 /*門市據點*/
 .section-store{
-    background-image: url("https://i.pinimg.com/564x/c4/5e/08/c45e08f0f6aab94dcc60eef4e5d79df5.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
+    background-color: rgb(235, 198, 154, 0.2);
 }
 
+
+.banner{
+  position: relative;
+}
 
 .pic-banner{
-    width: 100%;
     height: 50vh;
-    text-align: center;
+    margin: auto;
+    padding-top: 30px;
+    margin-top: 50px;
 }
 
-.pic-banner img{
-   width: 100%;
-   height: 100%;
-   object-fit: cover; /* 確保圖片填滿容器 */
+@media screen and (min-width: 768px) {
+  .pic-banner{
+     height: 55vh;
+     margin: auto;
+     padding-top: 30px;
+     margin-top: 50px;
+  }
 }
 
-.pic-banner h1{
-    position: absolute;
-    top: 35%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    letter-spacing: 3px;
-    font-size: 40px;
-    line-height: 1.4em;
-    font-weight: bold;
-
+@media screen and (min-width: 1024px) {
+  .pic-banner{
+     height: 60vh;
+     margin: auto;
+     padding-top: 30px;
+     margin-top: 50px;
+  }
 }
 
-.title-store {
-    text-align: center;
-    padding: 40px 0px 50px 0px;
-    font-size: 40px; 
-    color: #714B23;
-}
-
-.category-store{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 30px 0px;
-    gap: 30px;
-}
-
-.store-tab.active{
-    width: 180px;
-    height: 50px;
-    cursor: pointer;
-    text-align: center;
-    color: white;
-    background-color: #714B23;
-    border: 1px solid #714B23;
-    border-radius: 5px;
+  .pic-banner img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 10%;
   }
 
-  .store-tab.active h3{
-    position: relative;
-    top: 50%;  
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 20px;
+  
+
+   .pic-banner h1{
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        letter-spacing: 3px;
+        font-size: 40px;
+        line-height: 1.4em;
+        font-weight: bold;
+    
+    }
+
+    .category-store{
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      padding: 10%;
+      margin: auto;
+      gap: 6%;
+    }
+
+    .category-store .store-tab:hover {
+      background-color: #714B23;
+      color: #fff;
+    }
+  
+    @media screen and (min-width: 768px) {
+      .category-store{
+        padding: 8%;
+        padding-bottom: 4%;
+        /* margin-left:2%; */
+      }
+    }
+  
+    .store-tab{
+      width: 30%;
+      height: 45px;
+      cursor: pointer;
+      text-align: center;
+      color: #714B23;
+      background-color: white;
+      border: 1px solid #CEAE92;
+      border-radius: 20px;
+      margin-bottom: 4%;
+    }
+  
+    /* .south-tab, .east-tab{
+      margin-bottom: 0;
+    } */
+
+
+    @media screen and (min-width: 768px) {
+      .store-tab{
+         width: 135px; 
+         margin-bottom: 4%;
+      }
+    }
+  
+    /* @media screen and (min-width: 1024px) {
+
+      .store-tab{
+        margin-bottom: 0;
+      }
   }
-
-  .store-tab{
-    width: 180px;
-    height: 50px;
-    cursor: pointer;
-    text-align: center;
-    color: #714B23;
-    background-color: white;
-    border: 1px solid #CEAE92;
-    border-radius: 5px;
-  }
-
-  .store-tab h3{
-    position: relative;
-    top: 50%;  
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 20px;
-  }
-
-
+     */
+  
+    .store-tab h3{
+      position: relative;
+      top: 50%;  
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 16px;
+    }
+  
+    @media screen and (min-width: 768px) {
+      .store-tab h3{
+        font-size: 20px;
+        }
+      }
+  
+    .store-tab.active{
+      color: white;
+      background-color: #714B23;
+      border: 1px solid #CEAE92;
+    }
+  
   .store-card-list {
-    width: 1200px;
+    width: 85%;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    /* justify-content: center; */
     gap: 30px;
-    padding-top: 50px;
-    padding-bottom: 100px;
-}
+    padding-bottom: 10%;
+ }
 
-.store-card{
-    width: 300px;
-    margin: 10px;
-    /* background-color: #B7997A; */
-    border-radius: 20px;
+ @media screen and (min-width: 768px) {
+    .store-card-list {
+      width: 80%;
+      margin: auto;
+      display: flex;
+      flex-wrap: wrap;
+      /* justify-content: center; */
+      gap: 30px;
+      padding-bottom: 5%;
+   }
+  }
+
+  .store-card{
+    width: 100%;
+    /* width: 550px; */
+    /* margin: 10px; */
     color: black;
-    /* line-height: 2em; */
-    /* display: flex;
-    flex-direction: column;  */
+    line-height: 2em;
+    /* display: flex; */
+    box-shadow: 0 4px 4px rgb(0, 0, 0, 0.25);
+    border-radius: 20px; 
+    /* flex: 0 0 calc(100% - 15px); */
+  }
 
+@media screen and (min-width: 768px) {
+ .store-card{
+    color: black;
+    line-height: 2em;
+    box-shadow: 0 4px 4px rgb(0, 0, 0, 0.25);
+    border-radius: 20px; 
+    flex: 0 0 calc(50% - 15px);
+  }
 }
 
-.store-pic{
-    width:300px;
-    height: 300px;
-    overflow: hidden;
+@media screen and (min-width: 1024px) {
+    .store-card{
+       /* width: 550px; */
+       /* margin: 10px; */
+       color: black;
+       line-height: 2em;
+       /* display: flex; */
+       box-shadow: 0 4px 4px rgb(0, 0, 0, 0.25);
+       border-radius: 20px; 
+       flex: 0 0 calc(32.7% - 15px);
+     }
+   }
 
+ .store-pic{
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 20px 20px 0 0;
  }
- 
+
+
  .store-pic img{
-     width: 100%;
-     /* border-radius: 20px 20px 0px 0px; */
- }
+    vertical-align: top;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    scale: 1;
+    transition: .5s;
+}
+
+
+.store-card:hover .store-pic img {
+    scale: 1.1;
+}
+
+.store-info{
+    /* height: 250px; */
+    padding: 20px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 0 0 20px 20px;
+  }
+
 
 .store-title h3{
-   padding-bottom: 10px;
-   color: #714B23;
-   font-weight: bold;
-   font-size: 20px;
+  font-weight: bold;
+  padding-bottom: 10px;
+  color: #714B23;
+  font-size: 20px;
 }
-
- .store-info{
-    width: 300px;
-    padding: 20px;
-    background-color: white;
-    /* border-radius: 0px 0px 20px 20px; */
-    /* flex-grow: 1;
-    display: flex;
-    flex-direction: column; */
-}
-
-/* .store-info .store-text {
-    flex-grow: 1;
-} */

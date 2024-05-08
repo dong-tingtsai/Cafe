@@ -1,81 +1,124 @@
-/* 登入表單樣式 */
-.login-section{
-    background-image: url("https://i.pinimg.com/564x/c4/5e/08/c45e08f0f6aab94dcc60eef4e5d79df5.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
-    padding-top: 80px;
+/* login */
+
+#lightBox{
+  width: 100%;
+  height:100%;
+  position: fixed;
+  z-index:99;
+  top: 0;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  background:rgba(66,66,66,.6);
+
 }
 
-.login-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+.loginCard{
+    width: 100%;
+    max-width: 400px;
+    border-radius: 20px;
+    padding: 20px;
+    background-color: #F3ECE3; 
+    position: relative;
+    top: 50%;  
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
-.login-form {
-    width: 300px;
-    padding: 30px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #f9f9f9;
+.loginCard h2 {
+  font-size: 2rem;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  text-align: center;
 }
 
-.login-form h2 {
-    font-size: 35px;
-    margin-top: 25px;
-    margin-bottom: 25px;
-    text-align: center;
+
+
+.loginCard .close{
+  position: absolute;
+  top: 2%;
+  right: 2%;
+  cursor: pointer;
 }
 
-.input-group {
-    margin-bottom: 15px;
-}
 
 .input-group label {
-    display: block;
-    margin-bottom: 5px;
-    color: #714B23;
+  display: block;
+  margin-bottom: 5px;
+  color: #714B23;
 }
 
 .input-group input {
-    width: 100%;
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
+  width: 100%;
+  height:40px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 5px;
+  /* position: relative; */
 }
 
-.name a{
-    text-decoration: none;
-    font-size: 12px;
-    color: #714B23;
+/* .icon-group {
+  position: absolute;
+  right: 10px;
+  bottom: 0;
+} */
+
+.forget-password{
+  display: flex;
+  justify-content: end;
 }
 
-.name{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.forget-password p{
+  color: black;
 }
 
-.line{
-    width:0;
-    height:16px;
-    border-right: 1px solid #714B23;
-    margin: 0 10px;
+.forget-password a{
+  text-decoration: none;
 }
 
-button {
-    width: 100%;
-    padding: 15px 10px 10px 10px;
-    border: none;
-    border-radius: 3px;
-    background-color: #714B23;
-    color: white;
-    cursor: pointer;
+button.login-submit {
+  width: 100%;
+  height: 40px;
+  text-align: center;
+  border: none;
+  border-radius: 8px;
+  background-color: #714B23;
+  color: white;
+  cursor: pointer;
+
 }
 
-button:hover {
-    background-color: #555;
+.other-login h3{
+  text-align: center;
+  padding: 20px;
 }
+
+.social-web{
+  display: flex;
+  justify-content: center;
+  gap: 8%;
+}
+
+.social-web img{
+  width: 40px;
+  height: 40px;
+}
+
+.register{
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+  /* gap: 5%; */
+}
+
+
+.registerLink{
+  padding: 5px 20px;
+  border-radius: 8px;
+  background-color: #714B23;
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+
+}
+

@@ -1,0 +1,962 @@
+/* banner區 */
+.banner{
+  position: relative;
+}
+
+.pic-banner{
+    height: 70vh;
+    margin: auto;
+    padding-top: 30px;
+    margin-top: 50px;
+}
+
+@media screen and (min-width: 768px) {
+  .pic-banner{
+     height: 75vh;
+     margin: auto;
+     padding-top: 30px;
+     margin-top: 50px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .pic-banner{
+     height: 80vh;
+     margin: auto;
+     padding-top: 30px;
+     margin-top: 50px;
+  }
+}
+
+  .pic-banner img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 10%;
+  }
+
+  .slogan-banner-app h1{
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+    position: absolute;
+    left: 10%;
+    right: 10%;
+    top: 30%;
+    color: white;
+    letter-spacing: 3px;
+    font-size: 32px;
+    line-height: 1.2em;
+    font-weight: bold;
+
+}
+
+@media screen and (min-width: 768px) {
+  .slogan-banner-app h1{
+    display: none;
+
+    }
+}
+
+.slogan-banner h1{
+  display: none;
+
+}
+
+@media screen and (min-width: 768px) {
+
+    .slogan-banner h1{
+        display: block;
+        position: absolute;
+        /* right: 70px;
+        top: 220px; */
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        letter-spacing: 3px;
+        font-size: 40px;
+        line-height: 1.4em;
+        font-weight: bold;
+    
+    }
+  }
+
+  /* @media screen and (min-width: 768px) { */
+    /* nav-container */
+      /* .nav-container {
+        max-width: 1200px;
+        width: 100%;
+        position: relative;
+        margin: auto;
+    } */
+
+
+
+    /* Hide the images by default */
+      .pic-banner {
+        display: none;
+     }
+
+     /* Next & previous buttons */
+     .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        margin-top: -22px;
+        padding: 16px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+   }
+
+    /* Position the "next button" to the right */
+    .next {
+     right: 0;
+     border-radius: 3px 0 0 3px;
+    }
+
+   /* On hover, add a black background color with a little bit see-through */
+   .prev:hover, .next:hover {
+      background-color: rgba(0,0,0,0.8);
+     }
+
+  /* Caption text */
+  .text {
+     color: #f2f2f2;
+     font-size: 15px;
+     padding: 8px 12px;
+     position: absolute;
+     bottom: 8px;
+     width: 100%;
+     text-align: center;
+  }
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.banner_fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.dot-list{
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+
+  /* 歡迎來到cafe！  */
+
+.welcome{
+    background-color: #ECCEA3;
+}
+
+.welcome-container{
+   
+    width: 100%;
+    margin: auto;
+    font-size: 16px;
+    display: flex;
+  }
+
+
+@media screen and (min-width: 768px) {
+  .welcome-container{
+    width: 100%;
+    margin: auto;
+    position: relative;
+    padding: 50px;
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+
+  .welcome-text2{
+     display: none;
+  }
+}
+
+
+
+  .welcome-text{
+    width: 100%;
+    padding: 30px;
+    margin: 20px;
+  }
+
+
+@media screen and (min-width: 1024px) {
+  .welcome-text{
+    width: 50%;
+    padding: 30px;
+    margin: 20px;
+  }
+}
+
+
+.welcome-text h2{
+    padding-bottom: 20px;
+    font-size: 24px;
+    letter-spacing: 3px;
+  }
+  .welcome-text p{
+    letter-spacing:3px;
+  }
+
+@media screen and (min-width: 1024px) {
+ .welcome-text h2{
+    padding-bottom: 20px;
+    font-size: 40px;
+    letter-spacing: 3px;
+  }
+
+}
+
+.welcome-text p{
+  letter-spacing:3px;
+}
+
+.welcome-pic{
+  display: none;
+ }
+
+ 
+@media screen and (min-width: 1024px) {
+  .welcome-pic{
+    display: block;
+    width: 50%;
+    padding: 30px;
+    margin: 20px;
+    position: relative;
+ }
+
+  .welcome-coffee-beans{
+    width: 30%;
+    aspect-ratio: 1 / 1;
+    position: absolute;
+    top: 5%;
+    right: 10%;
+  }
+
+  .welcome-coffee-beans img{
+    vertical-align: top;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+ }
+
+ .welcome-make-coffee {
+    width: 45%;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    position: absolute;
+    top: 30%;
+    right: 50%;
+  }
+
+
+ .welcome-make-coffee img{
+    vertical-align: top;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+ }
+
+ .welcome-cake{
+    width: 35%;
+    aspect-ratio: 1 / 1;
+    position: absolute;
+    bottom: 5%;
+    right: 10%;
+
+ }
+
+ .welcome-cake img{
+    vertical-align: top;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+
+}
+
+/* 動態區  */
+
+.dynamic-area{
+  width: 100%;
+  background-color: #9A7D62;
+}
+
+.dynamic-container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+} 
+
+@media screen and (min-width: 768px) {
+.dynamic-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+}
+
+.dynamic{
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden; 
+  }
+
+  @media screen and (min-width: 768px) {
+    .dynamic{
+        width: 50%;
+        aspect-ratio: 1 / 1;
+      }
+    
+
+  }
+
+  @media screen and (min-width: 1024px) {
+    .dynamic{
+        width: calc(100% / 3);
+        aspect-ratio: 1 / 1;
+      }
+    
+
+  }
+
+
+.dynamic img{
+    width: 100%;
+    height: auto;
+    opacity: 50%;
+    scale: 1;
+    transition: .5s;
+} 
+
+ .dynamic img:hover{
+    scale: 1.1;
+} 
+
+
+ .dynamic h2{
+    font-size: 35px;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px; 
+} 
+
+ .dynamic a{
+    text-decoration: none;
+    color: #DDDDDD;
+} 
+
+/*商品介紹*/
+.section-product-title {
+  text-align: center;
+  margin: auto;
+  padding: 5%;
+
+}
+
+
+@media screen and (min-width: 768px) {
+   .section-product-title {
+      padding: 60px 30px 30px 30px;
+  }
+}
+
+.section-product-title h2{
+  font-size: 24px;
+  letter-spacing: 3px;
+}
+
+
+@media screen and (min-width: 768px) {
+  .section-product-title h2{
+    font-size: 40px;
+ }
+}
+
+
+  .product-card-list {
+    display: flex;
+    flex-direction: column;
+     width: 100%;
+     max-width: 1200px;
+     margin: auto;
+  }
+
+
+
+@media screen and (min-width: 768px) {
+  .product-card-list {
+    display: flex;
+    flex-direction: column;
+     width: 70%;
+     max-width: 1200px;
+     margin: auto;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .product-card-list {
+    display: flex;
+    flex-direction: row;
+     width: 90%;
+     max-width: 1200px;
+     margin: auto;
+  }
+}
+
+ .product-card{
+     width: calc(100% - 30px);
+     margin: 15px;
+  }
+
+@media screen and (min-width: 768px) {
+ .product-card{
+
+    width: calc(100% - 30px);
+    margin: 15px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .product-card{
+ 
+     width: calc(100% / 3 - 30px);
+     margin: 15px;
+   }
+ }
+
+.product-card .product-pic{
+    width: 50%;
+    aspect-ratio: 1 / 1;
+    margin: auto;
+    position: relative;
+    margin-bottom: -100px;
+
+}
+
+
+
+@media screen and (min-width: 768px) {
+   .product-card .product-pic{
+      width: 50%;
+      aspect-ratio: 1 / 1;
+      margin: auto;
+      position: relative;
+      margin-bottom: -80px;
+  }
+}
+
+
+@media screen and (min-width: 1024px) {
+  .product-card .product-pic{
+    position: relative;
+    margin-bottom: -100px;
+ }
+}
+
+
+
+.product-pic img{
+    vertical-align: top;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+} 
+
+.product-title{
+  font-size: 20px;
+}
+
+.product-coffee-txt{
+     width: 80%;
+     background-color: #B7997A;
+     font-size: 18px;
+     color: white;
+     height: 400px;
+     text-align: center;
+     padding: 30px 30px 0 30px;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     line-height: 2em;
+     border-radius: 50px;
+     margin: auto;
+  }
+
+  @media screen and (min-width: 768px) {
+  .product-coffee-txt{
+    width: 100%;
+    margin: auto;
+
+  }
+}
+
+
+.product-dessert-txt{
+  width: 80%;
+  background-color: #6B7551;
+  font-size: 18px;
+  color: white;
+  height: 400px;
+  text-align: center;
+  padding: 30px 30px 0 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 2em;
+  border-radius: 50px;
+  margin: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .product-dessert-txt{
+    width: 100%;
+    margin: auto;
+
+  }
+}
+
+.product-tea-txt{
+  width: 80%;
+  background-color: #714B23;
+  font-size: 18px;
+  color: white;
+  height: 400px;
+  text-align: center;
+  padding: 30px 30px 0 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 2em;
+  border-radius: 50px;
+  margin: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .product-tea-txt{
+    width: 100%;
+    margin: auto;
+
+  }
+}
+
+.learn-more{
+  width: 100%;
+  font-weight: bold;
+  text-align: center;
+  /* padding-top: 5%; */
+  margin: auto;
+  /* position: relative;
+  bottom: 25px; */
+  padding: 7%;
+}
+
+@media screen and (min-width: 1024px) {
+  .learn-more{
+     font-weight: bold;
+     text-align: right;
+     padding: 20px 40px 60px 20px;
+     margin: auto;
+ }
+}
+
+.learn-more a{
+  font-size: 16px;
+  text-decoration: none;
+  color: white;
+  padding: 15px 25px;
+  border-radius: 20px;
+  background-color:#ff8033;
+}
+
+/*熱門商品*/
+
+.section-hot-product-title {
+  text-align: center;
+  margin: auto;
+  padding: 5%;
+
+}
+
+
+@media screen and (min-width: 768px) {
+   .section-hot-product-title {
+      padding: 60px 30px 30px 30px;
+  }
+}
+
+.section-hot-product-title h2{
+  font-size: 24px;
+  letter-spacing: 3px;
+}
+
+
+@media screen and (min-width: 768px) {
+  .section-hot-product-title h2{
+    font-size: 40px;
+ }
+}
+
+.hot-product-card-list {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .hot-product-card-list {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    max-width: 1200px;
+    margin: auto;
+ }
+}
+
+@media screen and (min-width: 1024px) {
+  .hot-product-card-list {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    /* padding-top: 30px; */
+ }
+}
+
+.hot-product-title h3{
+  font-size: 20px;
+}
+
+
+
+.hot-product-card-1,
+.hot-product-card-2,
+.hot-product-card-3{
+  width: calc(100% - 30px);
+  margin: 15px;
+  position: relative;
+  border-radius: 50px;
+}
+
+
+.hot-product-card-1{
+  background-color: #B9AECB;
+}
+
+
+.hot-product-card-2{
+  background-color: #718BD0;
+}
+
+.hot-product-card-3{
+  background-color: #D19482;
+}
+
+
+   .hot-product-pic{
+      padding: 10% 10% 0px 10%;
+      /* height: 450px; */
+    }
+
+
+    .hot-product-pic img {
+      vertical-align: top;
+      width: 100%;
+      object-fit: cover;
+      border-radius: 50px;
+      /* height: 100%; */
+     }
+
+  
+  /* .hot-product-pic img {
+    vertical-align: top;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50px;
+   } */
+
+  @media screen and (min-width: 768px) {
+    .hot-product-pic{
+      padding: 10% 10% 0px 10%;
+      /* height: 550px; */
+    }
+
+   .hot-product-pic img {
+    vertical-align: top;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50px;
+    /* height: 100%; */
+   }
+  }
+
+@media screen and (min-width: 1024px) {
+  .hot-product-card-1{
+    /* width: 370px; */
+    width: 30.833333%;
+    /* margin: 15px; */
+    margin: 1.25%;
+    position: relative;
+    border-radius: 50px;
+    background-color: #B9AECB;
+ }
+
+ .hot-product-card-2{
+   /* width: 370px; */
+   width: 30.833333%;
+   /* margin: 15px; */
+   margin: 1.25%;
+   position: relative;
+   border-radius: 50px;
+   background-color: #718BD0;
+ }
+
+.hot-product-card-3{
+   /* width: 370px; */
+   width: 30.833333%;
+   /* margin: 15px; */
+   margin: 1.25%;
+   position: relative;
+   border-radius: 50px;
+   background-color: #D19482;
+ }
+
+}
+
+.hot-product-title{
+  text-align: center;
+  padding: 20px;
+  color: white;
+}
+
+/* 門市據點 */
+.location{
+  background-color: rgb(235, 198, 154, 0.2);
+}
+
+.section-location-title {
+  text-align: center;
+  margin: auto;
+  padding: 5%;
+
+}
+
+
+@media screen and (min-width: 768px) {
+  .section-location-title {
+      padding: 60px 30px 30px 30px;
+  }
+}
+
+.section-location-title h2{
+  font-size: 24px;
+  letter-spacing: 3px;
+}
+
+
+@media screen and (min-width: 768px) {
+  .section-location-title h2{
+    font-size: 40px;
+ }
+}
+
+.location-container{
+  width: 100%;
+  /* margin: auto; */
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+}
+
+
+@media screen and (min-width: 768px) {
+.location-container{
+   max-width: 1200px;
+   width: 90%;
+   margin: auto;
+   position: relative;
+   /* padding: 50px; */
+   font-size: 20px;
+ }
+}
+
+.location-content{
+  padding: 5px;
+}
+
+.location-content h3{
+  font-size: 20px;
+  /* font-weight: bold; */
+}
+
+.location-text{
+  width: 80%;
+  text-align: center;
+  padding: 30px;
+  margin: 20px;
+  color: white;
+  border-radius: 50px;
+  background-color: #714B23;
+} 
+
+@media screen and (min-width: 1024px) {
+  .location-text{
+    width: 40%;
+    padding: 30px;
+    margin: auto;
+    text-align: left;
+    margin-right: 1.25%;
+  } 
+
+}
+
+.location-pic{
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+
+  .location-container{
+    max-width: 1200px;
+    width: 90%;
+    margin: auto;
+    position: relative;
+    /* padding: 50px; */
+    font-size: 20px;
+  }
+
+  .location-pic{
+      display: flex;
+      padding: 20px;
+  }
+
+  .location-make-coffee{
+    width: 100%;
+    padding-top: 30px;
+    margin: 20px;
+  
+  }
+
+  .location-make-coffee img{
+    width: 100%;
+    vertical-align: top;
+    object-fit: cover;
+    border-radius: 20px;
+  
+  }
+
+  
+.location-store-locations{
+  width: 100%;
+  position: relative;
+  right: 50px;
+  top: 120px;
+}
+
+.location-store-locations img{
+  width: 100%;
+  vertical-align: top;
+  object-fit: cover;
+  border-radius: 20px;
+}
+  
+}
+
+
+/* 
+.location-make-coffee{
+  width: 20%;
+  padding-top: 30px;
+  margin: 20px;
+
+}
+
+.location-make-coffee img{
+  width: 100%;
+  vertical-align: top;
+  object-fit: cover;
+  border-radius: 20px;
+
+}
+
+.location-store-locations{
+  width: 20%;
+  position: relative;
+  right: 50px;
+  top: 120px;
+}
+
+.location-store-locations img{
+  width: 100%;
+  vertical-align: top;
+  object-fit: cover;
+  border-radius: 20px;
+} */
+
+
+/*
+.location-text{
+  width: 100%;
+  padding: 30px;
+  margin: 20px;
+} */
+
+
+
+
+
+

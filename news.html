@@ -9,51 +9,135 @@
     <link rel="stylesheet" href="./CSS/reset.css">
     <link rel="stylesheet" href="./CSS/header.css">
     <link rel="stylesheet" href="./CSS/news.css">
+    <link rel="stylesheet" href="./CSS/login.css">
     <link rel="stylesheet" href="./CSS/footer.css">
 </head>
+
 <body>
-       <!-- header區域 -->
-       <header class="header">
-        <nav class="nav-header">
-         <div class="nav-container">
-             <ul class="nav-left">
-                 <li><a href="./index.html">首頁</a></li>
-                 <li><a href="./news.html">最新消息</a></li>
-                 <li class="dropdown"><a href="./product-desciption.html">商品介紹</a>
-                    <ul class="dropdown-content">
-                     <li><a href="./product-desciption.html">咖啡飲品</a></li>
-                     <li><a href="./product-desciption.html">甜點</a></li>
-                     <li><a href="./product-desciption.html">茶類飲品</a></li>
-                   </ul>
-                 </li>
-                 <!-- <li><a href="./store-locations.html">門市據點</a></li> -->
-             </ul>
+  <div id="lightBox" style="display:none">
+    <div class="loginCard">
+     <h2>會員登入</h2>
+      <form action="">
+          <label for="login" class="close"  onclick="cancelLogin()">
+             <img src="images/xmark-solid.svg" width="25px" height="25px">
+          </label>
+          <div class="input-group">
+             <!-- <span class="icon-group">
+                <i class="fa-solid fa-envelope"></i>
+             </span> -->
+             <label for="username">帳號：</label>
+             <input type="text" id="username" name="username" placeholder="請輸入電子郵件" required>
+             <!-- <div class="icon-group">
+              <i class="fa-solid fa-envelope"></i>
+           </div> -->
+          </div>
+  
+          <div class="input-group">
+             <label for="password">密碼：</label>
+             <input type="password" id="password" name="password" placeholder="請輸入密碼" required>
+          </div>
+  
+          <div class="forget-password">
+            <a href="#"><p>忘記密碼</p></a>
+         </div>
+  
+        <button type="submit" class="login-submit">登入</button>
      
-             <div class="logo">
-                  <a href="./index.html">
-                     <img src="./images/logo-removebg-preview.png" alt="logo" width="150" height="150">
-                  </a>
-             </div>
-             <ul class="nav-left">
-                 <li><a href="./store-locations.html">門市據點</a></li>
-                 <li><a href="./about-us.html">關於我們</a></li>
-                 <li><a href="./contact-us.html">聯絡我們</a></li>
-                 <!-- <li><a href="#">會員登入</a></li> -->
-             </ul>
-             <div class="nav-icon">
-                 <a href="./login.html"><i class="fas fa-user"></i></a>
-                 <a href="#"> <i class="fas fa-shopping-cart"></i></a>
-                 <a href="#"><i class="fa fa-search"></i></a>
-             </div>
-     </div>
-   </nav>
- </header>
+        <div class="other-login">
+           <h3>或使用社群帳號登入</h3>
+           <div class="social-web">
+              <a href="#"><img src="images/facebook.png"></a>
+              <a href="#"><img src="images/google.png"></a>
+              <a href="#"><img src="images/line.png"></a>
+           </div>
+        </div>
+  
+        <div class="register">
+          <p>還沒有帳號嗎? <a href="#" class="registerLink">立即註冊</a></p>
+            <!-- <a href="#" class="registerLink">立即註冊</a> -->
+        </div>
+  
+    </form>
+   </div>
+  </div>
+
+
+ 
+  <!-- <input type="checkbox" id="menu-switch"> -->
+  <!-- header區域 -->
+  <header class="header">
+    <nav class="nav-header">
+      <div class="nav-container">
+        <ul class="nav">
+          <li><a href="./news.html">最新消息</a></li>
+          <li class="product-dropdown"><a href="./product-desciption.html">商品介紹</a>
+            <ul class="dropdown-content">
+              <li><a href="./product-desciption.html">咖啡飲品</a></li>
+              <li><a href="./product-desciption.html">甜點</a></li>
+              <li><a href="./product-desciption.html">茶類飲品</a></li>
+            </ul>
+          </li>
+          <li><a href="./store-locations.html">門市據點</a></li>
+        </ul>
+
+        <div class="logo">
+          <a href="./index.html">
+            <img src="./images/logo-removebg-preview.png" alt="logo" width="150" height="150">
+          </a>
+        </div>
+
+
+
+        <button id="btnHam" class="hb"></button> 
+
+
+        <!-- <label for="menu-switch" class="hb">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label> -->
+
+
+        <nav id="menu"  class="hb-nav hidden">
+          <ul class="hb-list">
+            <li><a href="./news.html">最新消息</a></li>
+            <li class="product-dropdown"><a href="./product-desciption.html">商品介紹</a>
+              <!-- <ul class="dropdown-subcontent">
+                <li><a href="./product-desciption.html">咖啡飲品</a></li>
+                <li><a href="./product-desciption.html">甜點</a></li>
+                <li><a href="./product-desciption.html">茶類飲品</a></li>
+              </ul> -->
+            </li>
+            <li><a href="./store-locations.html">門市據點</a></li>
+            <li><a href="./about-us.html">關於我們</a></li>
+            <li><a href="./contact-us.html">聯絡我們</a></li>
+            <li><a href="./Pickup-food-online.html">線上點餐</a></li>
+          </ul>
+        </nav>
+
+
+        <ul class="nav">
+          <li><a href="./about-us.html">關於我們</a></li>
+          <li><a href="./contact-us.html">聯絡我們</a></li>
+          <li><a href="./Pickup-food-online.html">線上點餐</a></li>
+        </ul>
+
+        <div class="nav-icon">
+          <a href="#" class="spanLogin" onclick = "showLightBox()"><i class="fas fa-user"></i></a>
+          <!-- <a href="#"> <i class="fas fa-shopping-cart"></i></a> -->
+          <a href="#"><i class="fa fa-search"></i></a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  
  
   <!-- banner區 -->
   <div class="banner" >
     <div class="container-banner">
         <div class="pic-banner">
-            <img src="https://i.pinimg.com/564x/72/85/f9/7285f98236a9920930c32eff6eabf922.jpg" alt="banner">
+            <img src="images/news.jpg" alt="banner">
+            <!-- <img src="https://images.unsplash.com/photo-1445116572660-236099ec97a0?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="banner"> -->
             <h1>最新消息</h1>
           </div>
     </div>
@@ -63,21 +147,22 @@
 <!-- 最新消息 -->
 <section class="section-news">
  <div class="container-news">
-    <div class="title-news">
+    <!-- <div class="title-news">
         <h2></h2>
-    </div>
+    </div> -->
 
     <div class="category-news">
         <div class="news-tab active"><h3>全部訊息</h3></div>
-        <div class="news-tab"><h3>優惠活動</h3></div>
-        <div class="news-tab"><h3>限時商品</h3></div>
+        <div class="news-tab discount"><h3>優惠活動</h3></div>
+        <div class="news-tab limited_time"><h3>限時商品</h3></div>
     </div>
 
-    <div class="news-card-list">
-
-       <div class="news-card">
+    <!-- 全部訊息 -->
+     <div class="news-card-list">
+       <div class="news-card limited_time_none">
           <div class="news-pic">
-            <img src="https://i.pinimg.com/564x/76/47/81/7647814dc8258322a6356191313cbf24.jpg">
+            <img src="images/mother-day.jpg">
+            <!-- <img src="https://i.pinimg.com/564x/76/47/81/7647814dc8258322a6356191313cbf24.jpg"> -->
           </div>
           <div class="news-info">
             <div class="news-title"><h3>母親節特惠</h3></div>
@@ -90,9 +175,10 @@
           </div>
        </div>
 
-       <div class="news-card">
+       <div class="news-card limited_time_none">
         <div class="news-pic">
-          <img src="https://i.pinimg.com/564x/76/a6/22/76a622d8a47c54f51c627643a1c63acd.jpg">
+          <img src="images/weekend.jpg">
+          <!-- <img src="https://i.pinimg.com/564x/76/a6/22/76a622d8a47c54f51c627643a1c63acd.jpg"> -->
         </div>
         <div class="news-info">
           <div class="news-title"><h3>周末特惠</h3></div>
@@ -105,12 +191,13 @@
         </div>
        </div>
 
-       <div class="news-card">
+       <div class="news-card limited_time_none">
         <div class="news-pic">
-          <img src="https://i.pinimg.com/564x/4a/9a/e5/4a9ae591bd2032d030d4ff4a1a6a243a.jpg">
+          <img src="images/dessert-day.jpg">
+          <!-- <img src="https://i.pinimg.com/564x/4a/9a/e5/4a9ae591bd2032d030d4ff4a1a6a243a.jpg"> -->
         </div>
         <div class="news-info">
-          <div class="news-title"><h3>甜點優惠日</h3></div>
+          <div class="news-title"><h3>甜點特價優惠</h3></div>
           <div class="news-text">
               <p>本週二是我們的甜點優惠日！您可以在這一天享受到所有甜點的特價優惠。從鬆軟的蛋糕到香甜的餅乾，都在等著您的光臨。</p>
           </div>
@@ -120,10 +207,27 @@
         </div>
        </div>
 
-
-       <div class="news-card">
+       <div class="news-card discount_none">
         <div class="news-pic">
-          <img src="https://i.pinimg.com/564x/2d/7e/e6/2d7ee629b569b28a27997abacbe34b09.jpg">
+          <img src="images/dynamic-news.jpg" alt="news">
+          <!-- <img src="https://i.pinimg.com/564x/27/f2/00/27f200d4a2897e69af4aa27379b0ff75.jpg"> -->
+        </div>
+        <div class="news-info">
+          <div class="news-title"><h3>下午茶套餐</h3></div>
+          <div class="news-text">
+              <p>今天下午 2 點至 4 點，我們為您帶來精心設計的下午茶套餐！無論是與家人、朋友還是獨自一人，都能在這裡找到滿足。</p>
+          </div>
+          <div class="news-date">
+             <p>2024/02/25</p>
+          </div>
+        </div>
+         </div>
+  
+
+       <div class="news-card discount_none">
+        <div class="news-pic">
+          <img src="images/Green-tea-latte.jpg">
+          <!-- <img src="https://i.pinimg.com/564x/2d/7e/e6/2d7ee629b569b28a27997abacbe34b09.jpg"> -->
         </div>
         <div class="news-info">
           <div class="news-title"><h3>絲滑抹茶拿鐵</h3></div>
@@ -136,24 +240,11 @@
         </div>
        </div>
 
-       <div class="news-card">
-      <div class="news-pic">
-        <img src="https://i.pinimg.com/564x/27/f2/00/27f200d4a2897e69af4aa27379b0ff75.jpg">
-      </div>
-      <div class="news-info">
-        <div class="news-title"><h3>下午茶時光</h3></div>
-        <div class="news-text">
-            <p>今天下午 2 點至 4 點，我們為您帶來精心設計的下午茶套餐！無論是與家人、朋友還是獨自一人，都能在這裡找到滿足。</p>
-        </div>
-        <div class="news-date">
-           <p>2024/02/25</p>
-        </div>
-      </div>
-       </div>
 
-       <div class="news-card">
-      <div class="news-pic">
-        <img src="https://i.pinimg.com/564x/b3/6f/b7/b36fb7615a6b2cceaf6fae1c557c9c64.jpg">
+       <div class="news-card discount_none">
+        <div class="news-pic">
+          <img src="images/coffee-gift-box.jpg">
+          <!-- <img src="https://i.pinimg.com/564x/b3/6f/b7/b36fb7615a6b2cceaf6fae1c557c9c64.jpg"> -->
       </div>
       <div class="news-info">
         <div class="news-title"><h3>限量精品咖啡禮盒</h3></div>
@@ -166,54 +257,127 @@
       </div>
        </div>
 
-
     </div>
+
+
+    <div class="pagination">
+      <a class="active">1</a>
+      <a>2</a>
+      <a>3</a>
+      <a>4</a>
+      <a>5</a>
+    </div>
+
+
 
  </div>
 </section>
 
 
-<!-- footer 區域-->
-<footer class="footer">
+ <!-- footer 區域-->
+ <footer class="footer">
   <div class="container-footer">
     <div class="content-footer">
       <div class="content1-footer">
-        <ul class="footer-left">
-            <li><a href="#">活動訊息</a></li>
-            <li><a href="#">聯絡我們</a></li>
-            <li><a href="#">門市查詢</a></li>
+        <ul class="footer-nav">
+          <li><a href="#">活動訊息</a></li>
+          <li><a href="#">聯絡我們</a></li>
+          <li><a href="#">門市查詢</a></li>
         </ul>
-    
+
         <div class="footer-logo">
-            <a href="#">
-                <img src="./images/logo-removebg-preview.png" alt="logo" width="150" height="150">
-             </a>
+          <a href="#">
+            <img src="./images/logo-removebg-preview.png" alt="logo" width="150" height="150">
+          </a>
         </div>
-    
-        <ul class="footer-right">
-            <li><a href="#">人才招募</a></li>
-            <li><a href="#">隱私權政策</a></li>
+
+        <ul class="footer-nav">
+          <li><a href="#">人才招募</a></li>
+          <li><a href="#">常見問題</a></li>
+          <li><a href="#">關於我們</a></li>
         </ul>
-        
+
       </div>
-       <div class="copyright">
-            <p>本網站為緯育TibaMe前端工程師班第xx期學員專題作品，本平台僅供學習、展示之用。</p>
-        </div>
-      </div>
-  
-    <div class="content2-footer">
+
+      <div class="content2-footer">
         <div class="icon-footer">
-            <a href="#"><i class="fa-brands fa-facebook"></i></a>
-            <a href="#"><i class="fa-brands fa-youtube"></i></a>
-            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-youtube"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
         </div>
         <div class="source">
-          <a href="./source.html"> <p>資料來源</p></a>
+          <a href="./source.html">
+            <p>資料來源</p>
+          </a>
         </div>
+      </div>
+
+      <div class="copyright">
+        <p class="chinese">本網站為緯育TibaMe前端工程師班第xx期學員專題作品，本平台僅供學習、展示之用。</p>
+      </div>
     </div>
+
+    <div class="to-top">
+      <a href="#">
+        <i class="fa-solid fa-angle-up"></i>
+      </a>
+    </div>
+
   </div>
 </footer>
 
 
+ <!-- footer-app 區域-->
+ <footer class="footer-app">
+  <div class="container-footer-app">
+    <div class="content-footer-app">
+
+      <div class="content1-footer-app">
+        <div class="footer-logo">
+          <a href="#">
+            <img src="./images/logo-removebg-preview.png" alt="logo" width="150" height="150">
+          </a>
+        </div>
+
+        <ul class="footer-nav">
+          <li><a href="#">活動訊息</a></li>
+          <li><a href="#">聯絡我們</a></li>
+          <li><a href="#">門市查詢</a></li>
+          <li><a href="#">人才招募</a></li>
+          <li><a href="#">常見問題</a></li>
+          <li><a href="#">關於我們</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="content2-footer-app">
+      <div class="icon-footer">
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+      <div class="source">
+        <a href="./source.html">
+          <p>資料來源</p>
+        </a>
+      </div>
+    </div>
+
+    <div class="copyright-app">
+      <p>本網站為緯育TibaMe前端工程師班第xx期學員專題作品，本平台僅供學習、展示之用。</p>
+    </div>
+
+    <div class="to-top">
+      <a href="#">
+        <i class="fa-solid fa-angle-up"></i>
+      </a>
+    </div>
+  </div>
+</footer>
+
+<script src="./js/hamburger_menu.js"></script>
+<script src="./js/login.js"></script>
+<script src="./js/news.js"></script>
 </body>
 </html>

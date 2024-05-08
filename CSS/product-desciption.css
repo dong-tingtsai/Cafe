@@ -1,200 +1,315 @@
 /*商品介紹*/
 .section-product{
-    background-image: url("https://i.pinimg.com/564x/c4/5e/08/c45e08f0f6aab94dcc60eef4e5d79df5.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
+    background-color: rgb(235, 198, 154, 0.2);
+}
+
+.banner{
+position: relative;
 }
 
 .pic-banner{
-    width: 100%;
-    height: 50vh;
-    text-align: center;
+  height: 50vh;
+  margin: auto;
+  padding-top: 30px;
+  margin-top: 50px;
+}
+
+@media screen and (min-width: 768px) {
+.pic-banner{
+   height: 55vh;
+   margin: auto;
+   padding-top: 30px;
+   margin-top: 50px;
+}
+}
+
+@media screen and (min-width: 1024px) {
+.pic-banner{
+   height: 60vh;
+   margin: auto;
+   padding-top: 30px;
+   margin-top: 50px;
+}
 }
 
 .pic-banner img{
-   width: 100%;
-   height: 100%;
-   object-fit: cover; /* 確保圖片填滿容器 */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 10%;
 }
 
-.pic-banner h1{
-    position: absolute;
-    top: 35%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    letter-spacing: 3px;
-    font-size: 40px;
-    line-height: 1.4em;
-    font-weight: bold;
 
-}
 
-.title-product {
-    text-align: center;
-    padding: 40px 0px 50px 0px;
-    font-size: 40px; 
-    color: #714B23;
-}
-
-.category-product{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 30px 30px 60px 0px;
-    gap: 30px;
-}
-
-.product-tab.active{
-    width: 180px;
-    height: 50px;
-    cursor: pointer;
-    text-align: center;
-    color: white;
-    background-color: #714B23;
-    border: 1px solid #714B23;
-    border-radius: 5px;
+ .pic-banner h1{
+      display: block;
+      position: absolute;
+      /* right: 70px;
+      top: 220px; */
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      letter-spacing: 3px;
+      font-size: 40px;
+      line-height: 1.4em;
+      font-weight: bold;
+  
   }
 
-  .product-tab.active h3{
-    position: relative;
-    top: 50%;  
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 20px;
+
+  .category-product{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 10%;
+    margin: auto;
+    gap: 6%;
+  }
+
+  .category-product .product-tab:hover {
+    background-color: #714B23;
+    color: #fff;
+  }
+
+  @media screen and (min-width: 768px) {
+    .category-product{
+      padding: 8%;
+      padding-bottom: 4%;
+      /* margin-left:2%; */
+    }
   }
 
   .product-tab{
-    width: 180px;
-    height: 50px;
+    width: 30%;
+    height: 45px;
     cursor: pointer;
     text-align: center;
     color: #714B23;
     background-color: white;
     border: 1px solid #CEAE92;
-    border-radius: 5px;
+    border-radius: 20px;
+    margin-bottom: 4%;
   }
 
+  /* .tea-tab{
+    margin-bottom: 0;
+  } */
+
+  @media screen and (min-width: 768px) {
+    .product-tab{
+      width: 135px; 
+      margin-bottom: 4%;
+  
+      }
+    }
+
+
+  
   .product-tab h3{
     position: relative;
     top: 50%;  
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 20px;
+    font-size: 16px;
   }
 
-  .product-title{
-    width: 1200px;
+  @media screen and (min-width: 768px) {
+    .product-tab h3{
+      font-size: 20px;
+      }
+    }
+
+  .product-tab.active{
+    color: white;
+    background-color: #714B23;
+    border: 1px solid #CEAE92;
+  }
+
+
+ .product-title{
     text-align: center;
-    margin: auto;
-    padding: 20px 0px 0px 20px;
-    /* border-bottom: 1px solid #714B23; */
+    font-size: 20px;
+    margin-bottom: 4%;
+ }
+
+ @media screen and (min-width: 768px) {
+  .product-title{
+     font-size: 36px;
+    }
   }
 
-  
+
+ .product-card-list-app {
+  width: 85%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding-bottom: 10%;
+  position: relative;
+}
+
+.product-card-list {
+  display: none;
+}
+
+
+
+
+@media screen and (min-width: 768px) {
+
+  .product-card-list-app {
+    display: none;
+  }
+
   .product-card-list {
-    width: 1200px;
+    width: 80%;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
     gap: 30px;
-    padding-top: 20px;
-    padding-bottom: 40px;
-    /* padding-bottom: 80px; */
-}
-
-
-.product-card{
-    width: 250px;
-    margin: 10px;
-    color: black;
-    /* border: 1px solid #B7997A; */
-    border-radius: 20px; 
-    cursor: pointer;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    transition: transform 0.5s;
-    background-color: white;
+    padding-bottom: 5%;
+ }
 
 }
 
-.product-card:hover {
-    transform: translateY(-20px); /* 懸停時向上移動 */
+ .product-card-coffee-app,
+ .product-card-dessert-app,
+ .product-card-tea-app{
+  /* width: 1200px; */
+  width: 90%;
+  border-radius: 20px; 
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  background-color: white;
+  margin: auto;
 }
 
 
-.product-btn {
-    display: none;
-    position: absolute;
-    left: 50%;
-    top: 45%;
-    transform: translate(-50%, -50%); /* 確保圖標居中 */
-    font-size: 30px; /* 增大圖標大小 */
-    border-radius: 20px; /* 圓形圖標 */
-    padding: 15px; /* 圖標內邊距 */
-    border: 1px solid white;
-}
-
-.shopping-cart{
-    color: white;
-}
-
-.product-card:hover .product-btn {
-    display: block;
-}
+@media screen and (min-width: 768px) {
+  .product-card-coffee,
+  .product-card-dessert,
+  .product-card-tea{
+     line-height: 2em;
+     box-shadow: 0 4px 4px rgb(0, 0, 0, 0.25);
+     background-color: white;
+     border-radius: 20px; 
+     flex: 0 0 calc(50% - 15px);
+   }
+ }
+ 
+ @media screen and (min-width: 1024px) {
+  .product-card-coffee,
+  .product-card-dessert,
+  .product-card-tea{
+        flex: 0 0 calc(32.7% - 15px);
+      }
+    }
+ 
 
 .product-pic{
-    /* width: 350px;
-    height: 350px; */
-    width: 250px;
-    height: 250px;
-    overflow: hidden;
-    position: relative;
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+  border-radius: 20px 20px 0 0;
+  position: relative;
 
- }
+}
 
- .product-pic .tag{
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: #FF8033;
-    color: white;
-    padding: 2px 5px;
-    font-size: 12px;
- }
+
+.product-pic img{
+  vertical-align: top;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  scale: 1;
+  transition: .5s;
+}
+
+
+.product-fade:hover .product-pic img {
+  scale: 1.1;
+}
+
+
+.product-pic .tag{
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #FF8033;
+  color: white;
+  padding: 2px 15px;
+  font-size: 12px;
+  border-radius: 20px 0 0 0;
+}
+
+
+.product-info{
+  width: 100%;
+}
+
+.product-name{
+ text-align: center;
+ padding: 20px;
+}
+
+.product-name h3{
+ color: #714B23;
+ font-weight: bold;
+ font-size: 18px;
+}
+
+
+
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.prev{
+  margin-left: -10%;
+}
+
+
+/* Position the "next button" to the right */
+.next{
+  margin-right: -10%;
+  right: 0;
+}
+
+
+@media screen and (min-width: 768px) {
+  .prev_2, .next_2,
+  .prev_3, .next_3{
+    display: none;
+  }
  
- .product-pic img{
-     width: 100%;
-     border-radius: 20px 20px 0px 0px; 
-     transition: filter 0.3s ease; /* 添加過渡效果 */
- }
 
- .product-card:hover  .product-pic img {
-    filter: brightness(70%); /* 懸停時降低亮度 */
-}
- 
- .product-info{
-     width: 250px;
- }
-
- .product-name{
-    text-align: center;
-    padding: 20px;
- }
-
- .product-name h3{
-    color: #714B23;
-    font-weight: bold;
-    font-size: 20px;
- }
-
-
-.product-title h2{
-    font-size: 35px;
 }
 
-.tea{
-    padding-bottom: 60px;
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
 }
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+

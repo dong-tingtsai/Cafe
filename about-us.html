@@ -6,100 +6,188 @@
     <title>Cafe</title>
     <!--Fontawesome ICON-->
     <script src="https://kit.fontawesome.com/4ce54b2072.js" crossorigin="anonymous"></script>
-=
     <link rel="stylesheet" href="./CSS/reset.css">
     <link rel="stylesheet" href="./CSS/header.css">
     <link rel="stylesheet" href="./CSS/about-us.css">
+    <link rel="stylesheet" href="./CSS/login.css">
     <link rel="stylesheet" href="./CSS/footer.css">
 </head>
-<body>
-      <!-- header區域 -->
-      <header class="header">
-        <nav class="nav-header">
-         <div class="nav-container">
-             <ul class="nav-left">
-                 <li><a href="./index.html">首頁</a></li>
-                 <li><a href="./news.html">最新消息</a></li>
-                 <li class="dropdown"><a href="./product-desciption.html">商品介紹</a>
-                    <ul class="dropdown-content">
-                     <li><a href="./product-desciption.html">咖啡飲品</a></li>
-                     <li><a href="./product-desciption.html">甜點</a></li>
-                     <li><a href="./product-desciption.html">茶類飲品</a></li>
-                   </ul>
-                 </li>
-                 <!-- <li><a href="./store-locations.html">門市據點</a></li> -->
-             </ul>
-     
-             <div class="logo">
-                 <a href="./index.html">
-                     <img src="./images/logo-removebg-preview.png" alt="logo" width="150" height="150">
-                  </a>
-             </div>
-             <ul class="nav-left">
-                 <li><a href="./store-locations.html">門市據點</a></li>
-                 <li><a href="./about-us.html">關於我們</a></li>
-                 <li><a href="./contact-us.html">聯絡我們</a></li>
-                 <!-- <li><a href="#">會員登入</a></li> -->
-             </ul>
-             <div class="nav-icon">
-                 <a href="./login.html"><i class="fas fa-user"></i></a>
-                 <a href="#"> <i class="fas fa-shopping-cart"></i></a>
-                 <a href="#"><i class="fa fa-search"></i></a>
-             </div>
-     </div>
-   </nav>
- </header>
 
-   <!-- banner區 -->
-   <div class="banner" >
+<body>
+  <div id="lightBox" style="display:none">
+    <div class="loginCard">
+     <h2>會員登入</h2>
+      <form action="">
+          <label for="login" class="close"  onclick="cancelLogin()">
+             <img src="images/xmark-solid.svg" width="25px" height="25px">
+          </label>
+          <div class="input-group">
+             <!-- <span class="icon-group">
+                <i class="fa-solid fa-envelope"></i>
+             </span> -->
+             <label for="username">帳號：</label>
+             <input type="text" id="username" name="username" placeholder="請輸入電子郵件" required>
+             <!-- <div class="icon-group">
+              <i class="fa-solid fa-envelope"></i>
+           </div> -->
+          </div>
+  
+          <div class="input-group">
+             <label for="password">密碼：</label>
+             <input type="password" id="password" name="password" placeholder="請輸入密碼" required>
+          </div>
+  
+          <div class="forget-password">
+            <a href="#"><p>忘記密碼</p></a>
+         </div>
+  
+        <button type="submit" class="login-submit">登入</button>
+     
+        <div class="other-login">
+           <h3>或使用社群帳號登入</h3>
+           <div class="social-web">
+              <a href="#"><img src="images/facebook.png"></a>
+              <a href="#"><img src="images/google.png"></a>
+              <a href="#"><img src="images/line.png"></a>
+           </div>
+        </div>
+  
+        <div class="register">
+          <p>還沒有帳號嗎? <a href="#" class="registerLink">立即註冊</a></p>
+            <!-- <a href="#" class="registerLink">立即註冊</a> -->
+        </div>
+  
+    </form>
+   </div>
+  </div>
+
+
+
+ 
+  <!-- <input type="checkbox" id="menu-switch"> -->
+  <!-- header區域 -->
+  <header class="header">
+    <nav class="nav-header">
+      <div class="nav-container">
+        <ul class="nav">
+          <li><a href="./news.html">最新消息</a></li>
+          <li class="product-dropdown"><a href="./product-desciption.html">商品介紹</a>
+            <ul class="dropdown-content">
+              <li><a href="./product-desciption.html">咖啡飲品</a></li>
+              <li><a href="./product-desciption.html">甜點</a></li>
+              <li><a href="./product-desciption.html">茶類飲品</a></li>
+            </ul>
+          </li>
+          <li><a href="./store-locations.html">門市據點</a></li>
+        </ul>
+
+        <div class="logo">
+          <a href="./index.html">
+            <img src="./images/logo-removebg-preview.png" alt="logo" width="150" height="150">
+          </a>
+        </div>
+
+
+
+        <button id="btnHam" class="hb"></button> 
+
+
+        <!-- <label for="menu-switch" class="hb">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label> -->
+
+
+        <nav id="menu"  class="hb-nav hidden">
+          <ul class="hb-list">
+            <li><a href="./news.html">最新消息</a></li>
+            <li class="product-dropdown"><a href="./product-desciption.html">商品介紹</a>
+              <!-- <ul class="dropdown-subcontent">
+                <li><a href="./product-desciption.html">咖啡飲品</a></li>
+                <li><a href="./product-desciption.html">甜點</a></li>
+                <li><a href="./product-desciption.html">茶類飲品</a></li>
+              </ul> -->
+            </li>
+            <li><a href="./store-locations.html">門市據點</a></li>
+            <li><a href="./about-us.html">關於我們</a></li>
+            <li><a href="./contact-us.html">聯絡我們</a></li>
+            <li><a href="./Pickup-food-online.html">線上點餐</a></li>
+          </ul>
+        </nav>
+
+
+        <ul class="nav">
+          <li><a href="./about-us.html">關於我們</a></li>
+          <li><a href="./contact-us.html">聯絡我們</a></li>
+          <li><a href="./Pickup-food-online.html">線上點餐</a></li>
+        </ul>
+
+        <div class="nav-icon">
+          <a href="#" class="spanLogin" onclick = "showLightBox()"><i class="fas fa-user"></i></a>
+          <!-- <a href="#"> <i class="fas fa-shopping-cart"></i></a> -->
+          <a href="#"><i class="fa fa-search"></i></a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  
+ 
+  <!-- banner區 -->
+  <div class="banner" >
     <div class="container-banner">
         <div class="pic-banner">
-            <img src="https://i.pinimg.com/564x/e3/28/30/e3283070c8baa8166ce386c311886a5d.jpg" alt="banner">
+           <img src="images/about.jpg" alt="banner">
+            <!-- <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="banner"> -->
             <h1>關於我們</h1>
         </div>
     </div>
 </div>
+
+
 
 <!-- 關於我們 -->
 <section class="section-about-us">
   <div class="about-container">
 
     <div class="title-about">
-       <h2></h2>
+       <h2>我們的三大特色</h2>
     </div>
 
   
-      <div class="card-list-about">
+    <div class="card-list-about">
+
        <div class="info-about">
         <div class="video-frame">
-          <video src="./video/make-coffee.mp4" autoplay loop playsinline></video>
+             <video src="./video/make-coffee.mp4" autoplay loop playsinline></video>
          </div>
-        <div class="text-about-a">
+        <div class="text-about">
             <h3>01.專業咖啡師</h3>
             <p>我們的團隊由經驗豐富的專業咖啡師組成，他們擁有豐富的咖啡知識和技藝，將為您製作出完美的咖啡，滿足您的味蕾。</p>
         </div>
       </div>
 
      <div class="info-about">
-      <div class="text-about-b">
+      <div class="text-about">
         <h3>02.舒適環境</h3>
         <p>我們的咖啡廳環境設計溫馨舒適，提供舒適的座位和寧靜的氛圍，讓您可以盡情放鬆身心，享受美味咖啡的同時，感受到家的溫暖。</p>
       </div>
       <div class="pic-about">
-         <img src="https://i.pinimg.com/564x/50/80/53/508053e11651db3ef6fcf15391524626.jpg"  alt="community-link">
+        <img src="images/dynamic-store-locations.jpg">
+         <!-- <img src="https://i.pinimg.com/564x/50/80/53/508053e11651db3ef6fcf15391524626.jpg"  alt="community-link"> -->
      </div>
    </div>
 
-   <div class="info-about">
+    <div class="info-about">
     <div class="video-frame">
       <video src="./video/make-coffee2.mp4" autoplay loop playsinline></video>
      </div>
-   <div class="text-about-c">
+   <div class="text-about">
        <h3>03.精選咖啡豆</h3>
        <p>我們精心挑選來自世界各地的優質咖啡豆，確保每一杯咖啡都能散發出獨特的風味和香氣。</p>
    </div>
- </div>
-</div>
+   </div>
+    </div>
 
 
 <!-- <div class="card-list-about">
@@ -140,50 +228,109 @@
 </section>
 
 
+ <!-- footer 區域-->
+ <footer class="footer">
+  <div class="container-footer">
+    <div class="content-footer">
+      <div class="content1-footer">
+        <ul class="footer-nav">
+          <li><a href="#">活動訊息</a></li>
+          <li><a href="#">聯絡我們</a></li>
+          <li><a href="#">門市查詢</a></li>
+        </ul>
 
-
-
-<!-- footer 區域-->
-<footer class="footer">
-    <div class="container-footer">
-      <div class="content-footer">
-        <div class="content1-footer">
-          <ul class="footer-left">
-              <li><a href="#">活動訊息</a></li>
-              <li><a href="#">聯絡我們</a></li>
-              <li><a href="#">門市查詢</a></li>
-          </ul>
-      
-          <div class="footer-logo">
-              <a href="#">
-                  <img src="./images/logo-removebg-preview.png" alt="logo" width="150" height="150">
-               </a>
-          </div>
-      
-          <ul class="footer-right">
-              <li><a href="#">人才招募</a></li>
-              <li><a href="#">隱私權政策</a></li>
-          </ul>
-          
+        <div class="footer-logo">
+          <a href="#">
+            <img src="./images/logo-removebg-preview.png" alt="logo" width="150" height="150">
+          </a>
         </div>
-         <div class="copyright">
-              <p>本網站為緯育TibaMe前端工程師班第xx期學員專題作品，本平台僅供學習、展示之用。</p>
-          </div>
-        </div>
-    
+
+        <ul class="footer-nav">
+          <li><a href="#">人才招募</a></li>
+          <li><a href="#">常見問題</a></li>
+          <li><a href="#">關於我們</a></li>
+        </ul>
+
+      </div>
+
       <div class="content2-footer">
-          <div class="icon-footer">
-              <a href="#"><i class="fa-brands fa-facebook"></i></a>
-              <a href="#"><i class="fa-brands fa-youtube"></i></a>
-              <a href="#"><i class="fa-brands fa-instagram"></i></a>
-          </div>
-          <div class="source">
-            <a href="./source.html"> <p>資料來源</p></a>
-          </div>
+        <div class="icon-footer">
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-youtube"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+        <div class="source">
+          <a href="./source.html">
+            <p>資料來源</p>
+          </a>
+        </div>
+      </div>
+
+      <div class="copyright">
+        <p class="chinese">本網站為緯育TibaMe前端工程師班第xx期學員專題作品，本平台僅供學習、展示之用。</p>
       </div>
     </div>
-  </footer>
+
+    <div class="to-top">
+      <a href="#">
+        <i class="fa-solid fa-angle-up"></i>
+      </a>
+    </div>
+
+  </div>
+</footer>
 
 
+ <!-- footer-app 區域-->
+ <footer class="footer-app">
+  <div class="container-footer-app">
+    <div class="content-footer-app">
+
+      <div class="content1-footer-app">
+        <div class="footer-logo">
+          <a href="#">
+            <img src="./images/logo-removebg-preview.png" alt="logo" width="150" height="150">
+          </a>
+        </div>
+
+        <ul class="footer-nav">
+          <li><a href="#">活動訊息</a></li>
+          <li><a href="#">聯絡我們</a></li>
+          <li><a href="#">門市查詢</a></li>
+          <li><a href="#">人才招募</a></li>
+          <li><a href="#">常見問題</a></li>
+          <li><a href="#">關於我們</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="content2-footer-app">
+      <div class="icon-footer">
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+      <div class="source">
+        <a href="./source.html">
+          <p>資料來源</p>
+        </a>
+      </div>
+    </div>
+
+    <div class="copyright-app">
+      <p>本網站為緯育TibaMe前端工程師班第xx期學員專題作品，本平台僅供學習、展示之用。</p>
+    </div>
+
+    <div class="to-top">
+      <a href="#">
+        <i class="fa-solid fa-angle-up"></i>
+      </a>
+    </div>
+  </div>
+</footer>
+
+<script src="./js/hamburger_menu.js"></script>
+<script src="./js/login.js"></script>
 </body>
 </html>

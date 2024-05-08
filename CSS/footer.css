@@ -1,85 +1,172 @@
-footer.footer{
-    display: flex;
-    background-color: #A3793A;
+
+@media screen and (max-width: 767px) {
+  
+    .footer .footer-logo,
+    .footer-app .footer-logo
+     {
+        width: 80px;
+        height: 80px;
+        margin-left: 15px;
+      }
+
+
+    .footer .footer-logo img,
+    .footer-app .footer-logo img{
+       width: 100%;
+       height: 100%;
+       margin-top: 5px;
+    }
 }
 
-.container-footer{
+
+  .footer{
+    display: none;
+  }
+
+  .content1-footer-app{
+     display: block;
+   }
+
+   .content1-footer-app .footer-nav{
+      display: flex;
+      flex-wrap: wrap;
+      padding: 15px;
+   }
+
+   .content1-footer-app .footer-nav li{
+      padding-right: 15px;
+ }
+
+    .content1-footer-app .footer-nav li a{
+      color: white;
+  }
+
+   .content2-footer-app{
+      display: flex;
+      padding: 15px;
+      align-items: center;
+   }
+
+   .content2-footer-app a{
+    color: white;
+    padding-right: 15px;
+    display: inline-block;
+ }
+
+ footer.footer-app{
+  display: flex;
+  background-color: #714B23;
+}
+
+ .copyright-app{
     display: flex;
-    margin: auto;
-    padding: 20px;
+    padding: 15px;
+ }
+
+ .copyright-app p{
+  color: white;
+ }
+
+@media screen and (min-width: 768px) {
+   footer.footer-app{
+      display: none;
+   }
+}
+
+
+@media screen and (max-width: 767px) {
+  .source{
+    position: absolute;
+    right: 15%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+
+  footer.footer{
+    display: flex;
+    background-color: #714B23;
+ }
+
+.container-footer{
+  display: flex;
+  margin: auto;
+  padding: 20px;
 }
 
 .content-footer{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.content1-footer{
+.footer .content1-footer{
     display: flex;
 }
 
-.footer-left{
-    display: flex;
-    align-content: center;
-    flex-wrap: wrap;
-    padding-right: 20px;
+.footer-nav {
+  max-width: 1200px;
+  width: 100%;
+  position: relative;
+  margin: auto;
+  display: flex;
+  align-content: center;
+  flex-wrap: wrap;
+  padding: 5px 15px 25px;
 }
 
-.footer-left li{
+.footer-nav li{
     list-style: none;
 }
 
-.footer-left li a{
-    text-decoration: none;
-    color: white;
-    padding-left: 25px;
-    margin-left: 10px;
+
+.footer-nav > li > a{
+  padding: 0 10px;
+  /* margin-bottom: 20px; */
+  text-decoration: none;
+  color: white;
+  /* font-size: 1.8vw; */
+  display: inline-block;
+  }
+
+}
+ 
+@media screen and (min-width: 850px) {
+
+ .footer-nav > li > a{
+  padding: 0 13px;
+  margin: 0 5px;
+  color: white;
+  font-size: 16px;
+  /* width: 90px;
+  text-align: center; */
+  display: inline-block;
+  }
 }
 
-.footer-right{
+
+   .copyright{
     display: flex;
-    align-content: center;
-    flex-wrap: wrap;
-    padding-left: 20px;
-}
-
-.footer-right li{
-    list-style: none;
-}
-
-.footer-right li a{
-    text-decoration: none;
-    color: white;
-    padding-right: 25px;
-    margin-right: 10px;
-}
-
-.copyright{
-    background-color: #A3793A;
+    background-color: #714B23;
     text-align: center;
-    border-bottom: 1px solid black;
+    margin: auto;
   }
 
   .copyright p{
     font-size: 14px;
     color: white;
-    /* padding: 20px; */
-    /* margin: 10px; */
+    padding: 20px 0 10px; 
+    margin: 10px 0 5px;
   }
 
-
-.content2-footer{
+  .content2-footer{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 10px;
-    margin-left: 10px;
-
+    justify-content: space-evenly;
 }
 
-.icon-footer{
-    padding: 20px;
+.content2-footer-app a{
+  color: white;
+  display: inline-block;
 }
 
 .icon-footer i{
@@ -88,18 +175,60 @@ footer.footer{
     padding: 10px;
   }
 
-  .source{
-    padding: 20px;
-  }
-
-  .source a{
-    text-decoration: none;
-  }
-
   .source p{
     color: white;
-    padding: 10px;
-    font-size: 14px;
+    /* font-size: 14px; */
   }
 
-  
+
+
+.to-top a{
+  width: 30px;
+  height: 30px;
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  background-color: #EAB262;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.to-top a i{
+  font-size: 16px;
+  color: #714B23;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+
+
+@media screen and (min-width: 768px) {
+.to-top a{
+  width: 60px;
+  height: 60px;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  background-color: #EAB262;
+  cursor: pointer;
+  border-radius: 50%;
+ }
+
+.to-top a i{
+  font-size: 25px;
+  color: #714B23;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  }
+
+}
+
+/* 按鈕懸停效果 */
+.to-top a:hover {
+background-color: #fff;
+}

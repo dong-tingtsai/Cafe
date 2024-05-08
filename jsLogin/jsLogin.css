@@ -1,0 +1,178 @@
+
+#lightBox{
+  position: fixed;
+  width: 100%;
+  height:100%;
+  z-index:10;
+  display: flex;
+  /* justify-content: center;
+  align-items: center; */
+  background:rgba(66,66,66,.6);
+
+}
+
+.loginCard{
+    width: 100%;
+    max-width: 400px;
+    max-height: 580px;
+    border-radius: 20px;
+    padding: 20px;
+    background-color: #F3ECE3; 
+    position: absolute; 
+    top: 50%;  
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.loginCard h2 {
+  font-size: 2rem;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+
+
+.loginCard .close{
+  position: absolute;
+  top: 2%;
+  right: 5%;
+  cursor: pointer;
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #714B23;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px 2px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  /* position: relative; */
+}
+
+/* .icon-group {
+  position: absolute;
+  right: 10px;
+  bottom: 0;
+} */
+
+.forget-password{
+  display: flex;
+  justify-content: end;
+}
+
+.forget-password p{
+  color: black;
+}
+
+.forget-password a{
+  text-decoration: none;
+}
+
+button.login-submit {
+  width: 100%;
+  text-align: center;
+  padding: 3% 1%;
+  border: none;
+  border-radius: 8px;
+  background-color: #714B23;
+  color: white;
+  cursor: pointer;
+
+}
+
+.other-login h3{
+  text-align: center;
+  padding: 20px;
+}
+
+.social-web{
+  display: flex;
+  justify-content: center;
+  gap: 8%;
+}
+
+.social-web img{
+  width: 40px;
+  height: 40px;
+}
+
+.register{
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  /* gap: 5%; */
+}
+
+
+.registerLink{
+  padding: 5px 20px;
+  border-radius: 8px;
+  background-color: #714B23;
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+
+}
+
+
+
+
+
+/* *{
+  padding: 0;
+  margin: 0;
+}
+
+body{background-image:url(BG002.gif);} 
+#lightBox{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgba(66,66,66,.6);
+}
+#tableLogin{
+  position: absolute;
+  width: 300px;
+  top: 0;
+  right: 0;
+  bottom: 25%;
+  left: 0;
+  margin:auto;
+  background-color:#FFCCDD;
+  border:1px dotted deepPink;
+}
+
+#tableLogin  td{
+  padding:2px 2px;
+  height:20px;
+  border-style:none;
+  border-bottom:1px dotted deeppink;
+}
+
+#tableLogin  input{
+  background-color:#FFCCDD;
+  font-size:16px;
+  padding-left:2px;
+}
+
+#btnLogin,#btnLoginCancel{margin-left:5px;padding:2px;} 
+
+#eye {
+  width:20px;
+}
+
+#spanLogin:hover{
+  cursor:pointer;
+  text-decoration:underline;
+
+} */
