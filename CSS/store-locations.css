@@ -64,7 +64,7 @@
       justify-content: center;
       padding: 10%;
       margin: auto;
-      gap: 6%;
+      gap: 5%;
     }
 
     .category-store .store-tab:hover {
@@ -76,11 +76,10 @@
       .category-store{
         padding: 8%;
         padding-bottom: 4%;
-        /* margin-left:2%; */
       }
     }
   
-    .store-tab{
+    .store-tab {
       width: 30%;
       height: 45px;
       cursor: pointer;
@@ -90,28 +89,16 @@
       border: 1px solid #CEAE92;
       border-radius: 20px;
       margin-bottom: 4%;
+      transition: background-color 0.3s, color 0.3s;
     }
   
-    /* .south-tab, .east-tab{
-      margin-bottom: 0;
-    } */
-
-
     @media screen and (min-width: 768px) {
       .store-tab{
          width: 135px; 
          margin-bottom: 4%;
       }
     }
-  
-    /* @media screen and (min-width: 1024px) {
-
-      .store-tab{
-        margin-bottom: 0;
-      }
-  }
-     */
-  
+    
     .store-tab h3{
       position: relative;
       top: 50%;  

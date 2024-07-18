@@ -66,7 +66,7 @@ position: relative;
     justify-content: center;
     padding: 10%;
     margin: auto;
-    gap: 6%;
+    gap: 5%;
   }
 
   .category-product .product-tab:hover {

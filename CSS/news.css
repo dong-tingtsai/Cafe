@@ -297,6 +297,7 @@
     color: #714B23;
     text-decoration: none;
     border-radius: 5px;
+    cursor: pointer;
     transition: background-color 0.3s, color 0.3s;
   }
 

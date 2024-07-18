@@ -1,0 +1,110 @@
+[
+  {
+    "id": 1,
+    "name": "美式咖啡",
+    "img": "images/Americano.jpg",
+    "img_removebg": "images/Americano-removebg-preview.png",
+    "category": "咖啡",
+    "price": 60,
+    "count": 1
+  },
+  {
+    "id": 2,
+    "name": "拿鐵咖啡",
+    "img": "images/latte.jpg",
+    "img_removebg": "images/latte-removebg-preview.png",
+    "category": "咖啡",
+    "price": 80,
+    "count": 1
+  },
+  {
+    "id": 3,
+    "name": "南瓜香料冰拿鐵",
+    "img": "images/Pumpkin-Spice-Iced-Latte.jpg",
+    "img_removebg": "images/Pumpkin-Spice-Iced-Latte-removebg-preview.png",
+    "category": "咖啡",
+    "price": 85,
+    "count": 1
+  },
+  {
+    "id": 4,
+    "name": "法式香草卡布奇諾",
+    "img": "images/French-Vanilla-Cappuccino.jpg",
+    "img_removebg": "images/French-Vanilla-Cappuccino-removebg-preview.png",
+    "category": "咖啡",
+    "price": 80,
+    "count": 1
+  },
+  {
+    "id": 5,
+    "name": "焦糖瑪奇朵",
+    "img": "images/Caramel-macchiato.jpg",
+    "img_removebg": "images/Caramel-macchiato-removebg-preview.png",
+    "category": "咖啡",
+    "price": 90,
+    "count": 1
+  },
+  {
+    "id": 6,
+    "name": "摩卡咖啡",
+    "img": "images/Mocha.jpg",
+    "img_removebg": "images/Mocha-removebg-preview.png",
+    "category": "咖啡",
+    "price": 80,
+    "count": 1
+  },
+  {
+    "id": 7,
+    "name": "奶油布丁",
+    "img": "images/Cream-pudding.jpg",
+    "img_removebg": "images/Cream-pudding-removebg-preview.png",
+    "category": "甜點",
+    "price": 60,
+    "count": 1
+  },
+  {
+    "id": 8,
+    "name": "巧克力南瓜鬆餅",
+    "img": "images/Chocolate-Pumpkin-Muffins.jpg",
+    "img_removebg": "images/Chocolate-Pumpkin-Muffins-removebg-preview.png",
+    "category": "甜點",
+    "price": 90,
+    "count": 1
+  },
+  {
+    "id": 9,
+    "name": "草莓起司蛋糕",
+    "img": "images/dessert-day.jpg",
+    "img_removebg": "images/dessert-day-removebg-preview.png",
+    "category": "甜點",
+    "price": 75,
+    "count": 1
+  },
+  {
+    "id": 10,
+    "name": "伯爵奶茶",
+    "img": "images/tea-drinks.jpg",
+    "img_removebg": "images/tea-drinks-removebg-preview.png",
+    "category": "茶類飲品",
+    "price": 50,
+    "count": 1
+  },
+  {
+    "id": 11,
+    "name": "紅茶",
+    "img": "images/black-tea.jpg",
+    "img_removebg": "images/black-tea-removebg-preview.png",
+    "category": "茶類飲品",
+    "price": 30,
+    "count": 1
+  },
+  {
+    "id": 12,
+    "name": "荔枝冰茶",
+    "img": "images/Lychee-iced-tea.jpg",
+    "img_removebg": "images/Lychee-iced-tea-removebg-preview.png",
+    "category": "茶類飲品",
+    "price": 60,
+    "count": 1
+  }
+]

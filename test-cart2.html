@@ -105,36 +105,6 @@
   <br>
   <br>
 
-
-  <div id="lightbox_cart" style="display:none">
-    <div class="order_cart">
-        <i class="fa-solid fa-xmark" onclick="closeModal()"></i>
-        <div class="img_cart">
-            <img src="images/Americano-removebg-preview.png" alt="">
-        </div>
-        <div class="name_cart">
-            <p class="font20px product_name">美式咖啡</p>
-            <select id="sizeSelect" onchange="updatePrice()">
-              <option value="M" class="M">M</option>
-              <option value="L" class="L">L</option>
-            </select>
-            <!-- <p class="font20px product_money" id="priceDisplay">$<span>60</span></p> -->
-            <div class="product_money" id="priceDisplay">$60</div>
-        </div>
-        <label class='label_note' for="note">備註：</label>
-        <br>
-        <textarea name="note" id="note" cols="30" rows="10" placeholder="請問有什麼需求"></textarea>
-        <div class="down_cart">
-            <div class="add_cart">
-                <i class="fa-solid fa-minus" onclick="decreaseQuantity()"></i>
-                <input type="text" class="qty" value="1">
-                <i class="fa-solid fa-plus" onclick="increaseQuantity()"></i>
-            </div>
-            <a class="btn_add btn_cart" onclick="addToCart()">加入購物車</a>
-        </div>
-    </div>
-</div>
-
 <section class="section-product">
   <div class="container-product">
      <div class="product-card-list">
@@ -178,10 +148,40 @@
 </section>
 
 
-<div class="check-cart-bar">
+<div class="lightbox_cart" style="display:none">
+  <div class="order_cart">
+      <i class="fa-solid fa-xmark" onclick="closeModal()"></i>
+      <div class="img_cart">
+          <img src="images/Americano-removebg-preview.png" alt="">
+      </div>
+      <div class="name_cart">
+          <p class="font20px product_name">美式咖啡</p>
+          <select id="sizeSelect" onchange="updatePrice()">
+            <option value="M" class="M">M</option>
+            <option value="L" class="L">L</option>
+          </select>
+          <!-- <p class="font20px product_money" id="priceDisplay">$<span>60</span></p> -->
+          <div class="product_money" id="priceDisplay">$60</div>
+      </div>
+      <label class='label_note' for="note">備註：</label>
+      <br>
+      <textarea name="note" id="note" cols="30" rows="10" placeholder="請問有什麼需求"></textarea>
+      <div class="down_cart">
+          <div class="add_cart">
+              <i class="fa-solid fa-minus" onclick="decreaseQuantity()"></i>
+              <input type="text" class="qty" value="1">
+              <i class="fa-solid fa-plus" onclick="increaseQuantity()"></i>
+          </div>
+          <a class="btn_add btn_cart" onclick="addToCart()">加入購物車</a>
+      </div>
+  </div>
+</div>
+
+
+<div class="check-cart-bar" style="display:none">
   <button class="check-cart" onclick="openCart()">
     <p>檢視購物車</p>
-    <span class="count-list"><span id="cart-count" class="highlight">0</span>
+    <span class="count-list"><span class="cart-count highlight">0</span>
   </button>
 </div>
 
@@ -201,7 +201,8 @@
 <div id="lightbox-cartlist" class="lightbox-cartlist" style="display:none">
     <div class="cartlist">
        <i class="fa-solid fa-xmark"  onclick="closeCart()"></i>
-       <ul class="cart-content" id="cart-items"></ul>
+       <ul class="cart-content" id="cart-items">
+       </ul>
          <p class="cart-pric">
            購物金額:
            <span class="total-money">$</span>
@@ -230,7 +231,7 @@
 <script src="./js/banner_slideshow.js"></script>
 <script src="./js/hamburger_menu.js"></script>
 <script src="./js/login.js"></script>
-<script src="./js/addcart.js"></script>
+<script src="./js/addcart_test-cart2.js"></script>
 
 <script>
 
